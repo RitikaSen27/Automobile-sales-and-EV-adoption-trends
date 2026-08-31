@@ -1,0 +1,289 @@
+state,vehicle_category,count,source_file
+Andaman and Nicobar Island,Two Wheeler,1.0,RS_Session_256_AU_95_C.csv
+Arunachal Pradesh,Two Wheeler,14.0,RS_Session_256_AU_95_C.csv
+Assam,Two Wheeler,721.0,RS_Session_256_AU_95_C.csv
+Bihar,Two Wheeler,5003.0,RS_Session_256_AU_95_C.csv
+Chandigarh,Two Wheeler,298.0,RS_Session_256_AU_95_C.csv
+Chhattisgarh,Two Wheeler,6424.0,RS_Session_256_AU_95_C.csv
+Delhi,Two Wheeler,14730.0,RS_Session_256_AU_95_C.csv
+Goa,Two Wheeler,1314.0,RS_Session_256_AU_95_C.csv
+Gujarat,Two Wheeler,13662.0,RS_Session_256_AU_95_C.csv
+Haryana,Two Wheeler,7777.0,RS_Session_256_AU_95_C.csv
+Himachal Pradesh,Two Wheeler,368.0,RS_Session_256_AU_95_C.csv
+Jammu and Kashmir,Two Wheeler,1417.0,RS_Session_256_AU_95_C.csv
+Jharkhand,Two Wheeler,2961.0,RS_Session_256_AU_95_C.csv
+Karnataka,Two Wheeler,56737.0,RS_Session_256_AU_95_C.csv
+Kerala,Two Wheeler,10299.0,RS_Session_256_AU_95_C.csv
+Ladakh,Two Wheeler,12.0,RS_Session_256_AU_95_C.csv
+Maharashtra,Two Wheeler,51149.0,RS_Session_256_AU_95_C.csv
+Manipur,Two Wheeler,86.0,RS_Session_256_AU_95_C.csv
+Meghalaya,Two Wheeler,16.0,RS_Session_256_AU_95_C.csv
+Mizoram,Two Wheeler,9.0,RS_Session_256_AU_95_C.csv
+Nagaland,Two Wheeler,44.0,RS_Session_256_AU_95_C.csv
+Odisha,Two Wheeler,10329.0,RS_Session_256_AU_95_C.csv
+Puducherry,Two Wheeler,1429.0,RS_Session_256_AU_95_C.csv
+Punjab,Two Wheeler,6408.0,RS_Session_256_AU_95_C.csv
+Rajasthan,Two Wheeler,23446.0,RS_Session_256_AU_95_C.csv
+Sikkim,Two Wheeler,1.0,RS_Session_256_AU_95_C.csv
+Tamil Nadu,Two Wheeler,44302.0,RS_Session_256_AU_95_C.csv
+Tripura,Two Wheeler,67.0,RS_Session_256_AU_95_C.csv
+Dadra and Nagar Haveli and Daman and Diu,Two Wheeler,69.0,RS_Session_256_AU_95_C.csv
+Uttar Pradesh,Two Wheeler,18295.0,RS_Session_256_AU_95_C.csv
+Uttarakhand,Two Wheeler,2614.0,RS_Session_256_AU_95_C.csv
+West Bengal,Two Wheeler,2540.0,RS_Session_256_AU_95_C.csv
+Andaman and Nicobar Island,Three Wheeler,30.0,RS_Session_256_AU_95_C.csv
+Arunachal Pradesh,Three Wheeler,,RS_Session_256_AU_95_C.csv
+Assam,Three Wheeler,47041.0,RS_Session_256_AU_95_C.csv
+Bihar,Three Wheeler,59079.0,RS_Session_256_AU_95_C.csv
+Chandigarh,Three Wheeler,1410.0,RS_Session_256_AU_95_C.csv
+Chhattisgarh,Three Wheeler,5341.0,RS_Session_256_AU_95_C.csv
+Delhi,Three Wheeler,112831.0,RS_Session_256_AU_95_C.csv
+Goa,Three Wheeler,28.0,RS_Session_256_AU_95_C.csv
+Gujarat,Three Wheeler,1869.0,RS_Session_256_AU_95_C.csv
+Haryana,Three Wheeler,18595.0,RS_Session_256_AU_95_C.csv
+Himachal Pradesh,Three Wheeler,167.0,RS_Session_256_AU_95_C.csv
+Jammu and Kashmir,Three Wheeler,43.0,RS_Session_256_AU_95_C.csv
+Jharkhand,Three Wheeler,8986.0,RS_Session_256_AU_95_C.csv
+Karnataka,Three Wheeler,16478.0,RS_Session_256_AU_95_C.csv
+Kerala,Three Wheeler,2115.0,RS_Session_256_AU_95_C.csv
+Ladakh,Three Wheeler,,RS_Session_256_AU_95_C.csv
+Maharashtra,Three Wheeler,6155.0,RS_Session_256_AU_95_C.csv
+Manipur,Three Wheeler,443.0,RS_Session_256_AU_95_C.csv
+Meghalaya,Three Wheeler,6.0,RS_Session_256_AU_95_C.csv
+Mizoram,Three Wheeler,1.0,RS_Session_256_AU_95_C.csv
+Nagaland,Three Wheeler,,RS_Session_256_AU_95_C.csv
+Odisha,Three Wheeler,1808.0,RS_Session_256_AU_95_C.csv
+Puducherry,Three Wheeler,32.0,RS_Session_256_AU_95_C.csv
+Punjab,Three Wheeler,2878.0,RS_Session_256_AU_95_C.csv
+Rajasthan,Three Wheeler,29631.0,RS_Session_256_AU_95_C.csv
+Sikkim,Three Wheeler,,RS_Session_256_AU_95_C.csv
+Tamil Nadu,Three Wheeler,4470.0,RS_Session_256_AU_95_C.csv
+Tripura,Three Wheeler,7510.0,RS_Session_256_AU_95_C.csv
+Dadra and Nagar Haveli and Daman and Diu,Three Wheeler,36.0,RS_Session_256_AU_95_C.csv
+Uttar Pradesh,Three Wheeler,257159.0,RS_Session_256_AU_95_C.csv
+Uttarakhand,Three Wheeler,22096.0,RS_Session_256_AU_95_C.csv
+West Bengal,Three Wheeler,40948.0,RS_Session_256_AU_95_C.csv
+Andaman and Nicobar Island,Four Wheeler,81.0,RS_Session_256_AU_95_C.csv
+Arunachal Pradesh,Four Wheeler,5.0,RS_Session_256_AU_95_C.csv
+Assam,Four Wheeler,161.0,RS_Session_256_AU_95_C.csv
+Bihar,Four Wheeler,114.0,RS_Session_256_AU_95_C.csv
+Chandigarh,Four Wheeler,182.0,RS_Session_256_AU_95_C.csv
+Chhattisgarh,Four Wheeler,117.0,RS_Session_256_AU_95_C.csv
+Delhi,Four Wheeler,3051.0,RS_Session_256_AU_95_C.csv
+Goa,Four Wheeler,289.0,RS_Session_256_AU_95_C.csv
+Gujarat,Four Wheeler,1309.0,RS_Session_256_AU_95_C.csv
+Haryana,Four Wheeler,186.0,RS_Session_256_AU_95_C.csv
+Himachal Pradesh,Four Wheeler,37.0,RS_Session_256_AU_95_C.csv
+Jammu and Kashmir,Four Wheeler,10.0,RS_Session_256_AU_95_C.csv
+Jharkhand,Four Wheeler,139.0,RS_Session_256_AU_95_C.csv
+Karnataka,Four Wheeler,7212.0,RS_Session_256_AU_95_C.csv
+Kerala,Four Wheeler,2524.0,RS_Session_256_AU_95_C.csv
+Ladakh,Four Wheeler,5484.0,RS_Session_256_AU_95_C.csv
+Maharashtra,Four Wheeler,2.0,RS_Session_256_AU_95_C.csv
+Manipur,Four Wheeler,9.0,RS_Session_256_AU_95_C.csv
+Meghalaya,Four Wheeler,3.0,RS_Session_256_AU_95_C.csv
+Mizoram,Four Wheeler,4.0,RS_Session_256_AU_95_C.csv
+Nagaland,Four Wheeler,121.0,RS_Session_256_AU_95_C.csv
+Odisha,Four Wheeler,75.0,RS_Session_256_AU_95_C.csv
+Puducherry,Four Wheeler,124.0,RS_Session_256_AU_95_C.csv
+Punjab,Four Wheeler,798.0,RS_Session_256_AU_95_C.csv
+Rajasthan,Four Wheeler,12.0,RS_Session_256_AU_95_C.csv
+Sikkim,Four Wheeler,2414.0,RS_Session_256_AU_95_C.csv
+Tamil Nadu,Four Wheeler,13.0,RS_Session_256_AU_95_C.csv
+Tripura,Four Wheeler,14.0,RS_Session_256_AU_95_C.csv
+Dadra and Nagar Haveli and Daman and Diu,Four Wheeler,153.0,RS_Session_256_AU_95_C.csv
+Uttar Pradesh,Four Wheeler,368.0,RS_Session_256_AU_95_C.csv
+Uttarakhand,Four Wheeler,709.0,RS_Session_256_AU_95_C.csv
+West Bengal,Four Wheeler,615.0,RS_Session_256_AU_95_C.csv
+Andaman and Nicobar Island,Goods Vehicles,,RS_Session_256_AU_95_C.csv
+Arunachal Pradesh,Goods Vehicles,,RS_Session_256_AU_95_C.csv
+Assam,Goods Vehicles,7.0,RS_Session_256_AU_95_C.csv
+Bihar,Goods Vehicles,11.0,RS_Session_256_AU_95_C.csv
+Chandigarh,Goods Vehicles,,RS_Session_256_AU_95_C.csv
+Chhattisgarh,Goods Vehicles,1077.0,RS_Session_256_AU_95_C.csv
+Delhi,Goods Vehicles,49.0,RS_Session_256_AU_95_C.csv
+Goa,Goods Vehicles,13.0,RS_Session_256_AU_95_C.csv
+Gujarat,Goods Vehicles,28.0,RS_Session_256_AU_95_C.csv
+Haryana,Goods Vehicles,122.0,RS_Session_256_AU_95_C.csv
+Himachal Pradesh,Goods Vehicles,7.0,RS_Session_256_AU_95_C.csv
+Jammu and Kashmir,Goods Vehicles,6.0,RS_Session_256_AU_95_C.csv
+Jharkhand,Goods Vehicles,24.0,RS_Session_256_AU_95_C.csv
+Karnataka,Goods Vehicles,153.0,RS_Session_256_AU_95_C.csv
+Kerala,Goods Vehicles,43.0,RS_Session_256_AU_95_C.csv
+Ladakh,Goods Vehicles,,RS_Session_256_AU_95_C.csv
+Maharashtra,Goods Vehicles,30.0,RS_Session_256_AU_95_C.csv
+Manipur,Goods Vehicles,1.0,RS_Session_256_AU_95_C.csv
+Meghalaya,Goods Vehicles,3.0,RS_Session_256_AU_95_C.csv
+Mizoram,Goods Vehicles,2.0,RS_Session_256_AU_95_C.csv
+Nagaland,Goods Vehicles,3.0,RS_Session_256_AU_95_C.csv
+Odisha,Goods Vehicles,21.0,RS_Session_256_AU_95_C.csv
+Puducherry,Goods Vehicles,9.0,RS_Session_256_AU_95_C.csv
+Punjab,Goods Vehicles,35.0,RS_Session_256_AU_95_C.csv
+Rajasthan,Goods Vehicles,25.0,RS_Session_256_AU_95_C.csv
+Sikkim,Goods Vehicles,1.0,RS_Session_256_AU_95_C.csv
+Tamil Nadu,Goods Vehicles,1281.0,RS_Session_256_AU_95_C.csv
+Tripura,Goods Vehicles,1.0,RS_Session_256_AU_95_C.csv
+Dadra and Nagar Haveli and Daman and Diu,Goods Vehicles,2.0,RS_Session_256_AU_95_C.csv
+Uttar Pradesh,Goods Vehicles,53.0,RS_Session_256_AU_95_C.csv
+Uttarakhand,Goods Vehicles,1.0,RS_Session_256_AU_95_C.csv
+West Bengal,Goods Vehicles,28.0,RS_Session_256_AU_95_C.csv
+Andaman and Nicobar Island,Public Service Vehicle,40.0,RS_Session_256_AU_95_C.csv
+Arunachal Pradesh,Public Service Vehicle,,RS_Session_256_AU_95_C.csv
+Assam,Public Service Vehicle,15.0,RS_Session_256_AU_95_C.csv
+Bihar,Public Service Vehicle,26.0,RS_Session_256_AU_95_C.csv
+Chandigarh,Public Service Vehicle,40.0,RS_Session_256_AU_95_C.csv
+Chhattisgarh,Public Service Vehicle,1.0,RS_Session_256_AU_95_C.csv
+Delhi,Public Service Vehicle,39.0,RS_Session_256_AU_95_C.csv
+Goa,Public Service Vehicle,36.0,RS_Session_256_AU_95_C.csv
+Gujarat,Public Service Vehicle,278.0,RS_Session_256_AU_95_C.csv
+Haryana,Public Service Vehicle,8.0,RS_Session_256_AU_95_C.csv
+Himachal Pradesh,Public Service Vehicle,86.0,RS_Session_256_AU_95_C.csv
+Jammu and Kashmir,Public Service Vehicle,43.0,RS_Session_256_AU_95_C.csv
+Jharkhand,Public Service Vehicle,4.0,RS_Session_256_AU_95_C.csv
+Karnataka,Public Service Vehicle,44.0,RS_Session_256_AU_95_C.csv
+Kerala,Public Service Vehicle,23.0,RS_Session_256_AU_95_C.csv
+Ladakh,Public Service Vehicle,,RS_Session_256_AU_95_C.csv
+Maharashtra,Public Service Vehicle,851.0,RS_Session_256_AU_95_C.csv
+Manipur,Public Service Vehicle,,RS_Session_256_AU_95_C.csv
+Meghalaya,Public Service Vehicle,,RS_Session_256_AU_95_C.csv
+Mizoram,Public Service Vehicle,1.0,RS_Session_256_AU_95_C.csv
+Nagaland,Public Service Vehicle,,RS_Session_256_AU_95_C.csv
+Odisha,Public Service Vehicle,,RS_Session_256_AU_95_C.csv
+Puducherry,Public Service Vehicle,20.0,RS_Session_256_AU_95_C.csv
+Punjab,Public Service Vehicle,2.0,RS_Session_256_AU_95_C.csv
+Rajasthan,Public Service Vehicle,1.0,RS_Session_256_AU_95_C.csv
+Sikkim,Public Service Vehicle,,RS_Session_256_AU_95_C.csv
+Tamil Nadu,Public Service Vehicle,37.0,RS_Session_256_AU_95_C.csv
+Tripura,Public Service Vehicle,,RS_Session_256_AU_95_C.csv
+Dadra and Nagar Haveli and Daman and Diu,Public Service Vehicle,10.0,RS_Session_256_AU_95_C.csv
+Uttar Pradesh,Public Service Vehicle,327.0,RS_Session_256_AU_95_C.csv
+Uttarakhand,Public Service Vehicle,10.0,RS_Session_256_AU_95_C.csv
+West Bengal,Public Service Vehicle,97.0,RS_Session_256_AU_95_C.csv
+Andaman and Nicobar Island,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Arunachal Pradesh,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Assam,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Bihar,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Chandigarh,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Chhattisgarh,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Delhi,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Goa,Special Category Vehicles,2.0,RS_Session_256_AU_95_C.csv
+Gujarat,Special Category Vehicles,344.0,RS_Session_256_AU_95_C.csv
+Haryana,Special Category Vehicles,2.0,RS_Session_256_AU_95_C.csv
+Himachal Pradesh,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Jammu and Kashmir,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Jharkhand,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Karnataka,Special Category Vehicles,1.0,RS_Session_256_AU_95_C.csv
+Kerala,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Ladakh,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Maharashtra,Special Category Vehicles,26.0,RS_Session_256_AU_95_C.csv
+Manipur,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Meghalaya,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Mizoram,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Nagaland,Special Category Vehicles,1.0,RS_Session_256_AU_95_C.csv
+Odisha,Special Category Vehicles,25.0,RS_Session_256_AU_95_C.csv
+Puducherry,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Punjab,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Rajasthan,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Sikkim,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Tamil Nadu,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Tripura,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Dadra and Nagar Haveli and Daman and Diu,Special Category Vehicles,7.0,RS_Session_256_AU_95_C.csv
+Uttar Pradesh,Special Category Vehicles,2.0,RS_Session_256_AU_95_C.csv
+Uttarakhand,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+West Bengal,Special Category Vehicles,,RS_Session_256_AU_95_C.csv
+Andaman and Nicobar Island,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Arunachal Pradesh,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Assam,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Bihar,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Chandigarh,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Chhattisgarh,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Delhi,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Goa,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Gujarat,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Haryana,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Himachal Pradesh,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Jammu and Kashmir,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Jharkhand,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Karnataka,Ambulance/Hearses,1.0,RS_Session_256_AU_95_C.csv
+Kerala,Ambulance/Hearses,1.0,RS_Session_256_AU_95_C.csv
+Ladakh,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Maharashtra,Ambulance/Hearses,1.0,RS_Session_256_AU_95_C.csv
+Manipur,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Meghalaya,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Mizoram,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Nagaland,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Odisha,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Puducherry,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Punjab,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Rajasthan,Ambulance/Hearses,1.0,RS_Session_256_AU_95_C.csv
+Sikkim,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Tamil Nadu,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Tripura,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Dadra and Nagar Haveli and Daman and Diu,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Uttar Pradesh,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+Uttarakhand,Ambulance/Hearses,,RS_Session_256_AU_95_C.csv
+West Bengal,Ambulance/Hearses,2.0,RS_Session_256_AU_95_C.csv
+Andaman and Nicobar Island,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Arunachal Pradesh,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Assam,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Bihar,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Chandigarh,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Chhattisgarh,Construction Equipment Vehicle,368.0,RS_Session_256_AU_95_C.csv
+Delhi,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Goa,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Gujarat,Construction Equipment Vehicle,26.0,RS_Session_256_AU_95_C.csv
+Haryana,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Himachal Pradesh,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Jammu and Kashmir,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Jharkhand,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Karnataka,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Kerala,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Ladakh,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Maharashtra,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Manipur,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Meghalaya,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Mizoram,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Nagaland,Construction Equipment Vehicle,1.0,RS_Session_256_AU_95_C.csv
+Odisha,Construction Equipment Vehicle,1.0,RS_Session_256_AU_95_C.csv
+Puducherry,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Punjab,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Rajasthan,Construction Equipment Vehicle,1.0,RS_Session_256_AU_95_C.csv
+Sikkim,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Tamil Nadu,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Tripura,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Dadra and Nagar Haveli and Daman and Diu,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Uttar Pradesh,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Uttarakhand,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+West Bengal,Construction Equipment Vehicle,,RS_Session_256_AU_95_C.csv
+Andaman and Nicobar Island,Other,7.0,RS_Session_256_AU_95_C.csv
+Arunachal Pradesh,Other,1.0,RS_Session_256_AU_95_C.csv
+Assam,Other,2.0,RS_Session_256_AU_95_C.csv
+Bihar,Other,8.0,RS_Session_256_AU_95_C.csv
+Chandigarh,Other,1.0,RS_Session_256_AU_95_C.csv
+Chhattisgarh,Other,100.0,RS_Session_256_AU_95_C.csv
+Delhi,Other,1602.0,RS_Session_256_AU_95_C.csv
+Goa,Other,4.0,RS_Session_256_AU_95_C.csv
+Gujarat,Other,77.0,RS_Session_256_AU_95_C.csv
+Haryana,Other,90.0,RS_Session_256_AU_95_C.csv
+Himachal Pradesh,Other,46.0,RS_Session_256_AU_95_C.csv
+Jammu and Kashmir,Other,8.0,RS_Session_256_AU_95_C.csv
+Jharkhand,Other,57.0,RS_Session_256_AU_95_C.csv
+Karnataka,Other,1420.0,RS_Session_256_AU_95_C.csv
+Kerala,Other,17.0,RS_Session_256_AU_95_C.csv
+Ladakh,Other,,RS_Session_256_AU_95_C.csv
+Maharashtra,Other,601.0,RS_Session_256_AU_95_C.csv
+Manipur,Other,1.0,RS_Session_256_AU_95_C.csv
+Meghalaya,Other,,RS_Session_256_AU_95_C.csv
+Mizoram,Other,3.0,RS_Session_256_AU_95_C.csv
+Nagaland,Other,1.0,RS_Session_256_AU_95_C.csv
+Odisha,Other,23.0,RS_Session_256_AU_95_C.csv
+Puducherry,Other,,RS_Session_256_AU_95_C.csv
+Punjab,Other,21.0,RS_Session_256_AU_95_C.csv
+Rajasthan,Other,24.0,RS_Session_256_AU_95_C.csv
+Sikkim,Other,9.0,RS_Session_256_AU_95_C.csv
+Tamil Nadu,Other,193.0,RS_Session_256_AU_95_C.csv
+Tripura,Other,1.0,RS_Session_256_AU_95_C.csv
+Dadra and Nagar Haveli and Daman and Diu,Other,,RS_Session_256_AU_95_C.csv
+Uttar Pradesh,Other,13.0,RS_Session_256_AU_95_C.csv
+Uttarakhand,Other,21.0,RS_Session_256_AU_95_C.csv
+West Bengal,Other,61.0,RS_Session_256_AU_95_C.csv

@@ -1,0 +1,118 @@
+state,count,metric,source_file
+Telangana,57,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Jharkhand,30,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Goa,30,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Karnataka,65,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Himachal Pradesh,9,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Uttar Pradesh,16,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Rajasthan,49,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Delhi,94,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Chandigarh UT,48,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Delhi-Jaipur- Agra Highway,31,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Mumbai-Pune Expressway,17,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Jaipur- Delhi Highway,9,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Delhi- Chandigarh Highway,24,Operational Charging Stations Under FAME-I,RS_Session_257_AS_71_A.ii_.csv
+Andaman and Nicobar,3,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Andhra Pradesh,222,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Arunachal Pradesh,9,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Assam,48,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Bihar,83,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Chandigarh,6,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Chhattisgarh,46,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Delhi,1845,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Goa,44,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Gujarat,195,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Haryana,232,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Himachal Pradesh,27,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Jammu and Kashmir,24,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Jharkhand,60,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Karnataka,704,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Kerala,192,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Lakshadweep,1,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Madhya Pradesh,174,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Maharashtra,660,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Manipur,16,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Meghalaya,19,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Nagaland,6,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Odisha,117,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Puducherry,4,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Punjab,126,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Rajasthan,254,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Sikkim,1,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Tamil Nadu,441,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Telangana,365,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Tripura,18,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Dadra and Nagar Haveli and Daman and Diu,1,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Uttar Pradesh,406,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Uttarakhand,48,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+West Bengal,189,No. of Operational PCS,RS_Session_259_AU_2837_A.csv
+Andaman and Nicobar Islands,3,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Andhra Pradesh,327,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Arunachal Pradesh,9,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Assam,86,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Bihar,124,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Chandigarh,12,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Chhattisgarh,149,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Delhi,1886,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Goa,113,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Gujarat,476,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Haryana,377,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Himachal Pradesh,44,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Jammu and Kashmir,47,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Jharkhand,135,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Karnataka,5130,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Kerala,958,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Lakshadweep,1,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Madhya Pradesh,341,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Maharashtra,3083,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Manipur,17,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Meghalaya,21,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Nagaland,6,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Odisha,198,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Puducherry,23,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Punjab,158,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Rajasthan,500,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Sikkim,2,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Tamil Nadu,643,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Telangana,483,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Tripura,18,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Dadra and Nagar Haveli and Daman and Diu,1,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Uttar Pradesh,583,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Uttarakhand,76,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+West Bengal,318,No. of PCS as on 31st March 2024,RS_Session_265_AU_2151_E.csv
+Karnataka,5765,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Maharashtra,3728,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Uttar Pradesh,1989,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Delhi,1941,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Tamil Nadu,1413,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Kerala,1212,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Rajasthan,1129,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Gujarat,992,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Telangana,956,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Madhya Pradesh,903,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+West Bengal,763,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Haryana,709,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Andhra Pradesh,601,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Punjab,593,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Odisha,488,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Bihar,347,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Assam,276,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Chhattisgarh,271,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Jharkhand,256,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Uttarakhand,177,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Jammu and Kashmir,159,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Goa,137,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Himachal Pradesh,106,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Tripura,50,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Manipur,46,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Meghalaya,43,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Puducherry,41,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Arunachal Pradesh,41,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Nagaland,28,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Chandigarh,13,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Mizoram,12,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Dadra and Nagar Haveli and Daman and Diu,6,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Sikkim,5,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Andaman and Nicobar Islands,4,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Lakshadweep,1,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv
+Ladakh,1,No. of EVPCS,RS_Session_266_AU_2960_B_i.csv

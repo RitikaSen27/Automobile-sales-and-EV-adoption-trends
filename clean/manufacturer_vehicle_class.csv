@@ -1,0 +1,26 @@
+category,vehicle_class,total_registered,source_file
+Transport Vehicles ,Motor Cycle/Scooter-SideCar (T),8,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Motor Cycle/Scooter-Used For Hire,4468,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,E-Rickshaw (P),495781,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,E-Rickshaw with Cart (G),21871,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Three Wheeler (Goods),2630,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Three Wheeler (Passenger),18268,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Luxury Cab,70,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Maxi Cab,158,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Motor Cab,3267,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Omni Bus,65,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Bus,1298,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Educational Institution Bus,9,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Goods Carrier,2591,RS_Session_254_AU_2384.C.i.csv
+Transport Vehicles ,Private Service Vehicle,7,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,M-Cycle/Scooter,135691,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,M-Cycle/Scooter-With Side Car,121,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,Motorised Cycle (CC > 25cc),4246,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,Moped,13001,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,Motor Car,15700,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,Adapted Vehicle,62,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,Three Wheeler (Personal),300,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,Omni Bus (Private Use),14,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,Private Service Vehicle (Individual Use),11,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,Construction Equipment Vehicle,489,RS_Session_254_AU_2384.C.i.csv
+Non-Transport Vehicles,Fork Lift,334,RS_Session_254_AU_2384.C.i.csv

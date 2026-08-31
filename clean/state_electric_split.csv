@@ -1,0 +1,69 @@
+state,category,count,source_file
+Andaman and Nicobar Islands,Electric,190,RS_Session_260_AU_2349_A_to_B.csv
+Andhra Pradesh,Electric,67905,RS_Session_260_AU_2349_A_to_B.csv
+Arunachal Pradesh,Electric,28,RS_Session_260_AU_2349_A_to_B.csv
+Assam,Electric,120423,RS_Session_260_AU_2349_A_to_B.csv
+Bihar,Electric,161060,RS_Session_260_AU_2349_A_to_B.csv
+Chandigarh,Electric,7964,RS_Session_260_AU_2349_A_to_B.csv
+Chhattisgarh,Electric,54848,RS_Session_260_AU_2349_A_to_B.csv
+Delhi,Electric,233212,RS_Session_260_AU_2349_A_to_B.csv
+Goa,Electric,12615,RS_Session_260_AU_2349_A_to_B.csv
+Gujarat,Electric,138410,RS_Session_260_AU_2349_A_to_B.csv
+Haryana,Electric,69271,RS_Session_260_AU_2349_A_to_B.csv
+Himachal Pradesh,Electric,2410,RS_Session_260_AU_2349_A_to_B.csv
+Jammu and Kashmir,Electric,10896,RS_Session_260_AU_2349_A_to_B.csv
+Jharkhand,Electric,36759,RS_Session_260_AU_2349_A_to_B.csv
+Karnataka,Electric,248747,RS_Session_260_AU_2349_A_to_B.csv
+Kerala,Electric,98332,RS_Session_260_AU_2349_A_to_B.csv
+Ladakh,Electric,65,RS_Session_260_AU_2349_A_to_B.csv
+Madhya Pradesh,Electric,96151,RS_Session_260_AU_2349_A_to_B.csv
+Maharashtra,Electric,305006,RS_Session_260_AU_2349_A_to_B.csv
+Manipur,Electric,1203,RS_Session_260_AU_2349_A_to_B.csv
+Meghalaya,Electric,139,RS_Session_260_AU_2349_A_to_B.csv
+Mizoram,Electric,118,RS_Session_260_AU_2349_A_to_B.csv
+Nagaland,Electric,62,RS_Session_260_AU_2349_A_to_B.csv
+Odisha,Electric,62567,RS_Session_260_AU_2349_A_to_B.csv
+Puducherry,Electric,4588,RS_Session_260_AU_2349_A_to_B.csv
+Punjab,Electric,35727,RS_Session_260_AU_2349_A_to_B.csv
+Rajasthan,Electric,180670,RS_Session_260_AU_2349_A_to_B.csv
+Sikkim,Electric,20,RS_Session_260_AU_2349_A_to_B.csv
+Tamil Nadu,Electric,173152,RS_Session_260_AU_2349_A_to_B.csv
+Tripura,Electric,14839,RS_Session_260_AU_2349_A_to_B.csv
+Dadra and Nagar Haveli and Daman and Diu,Electric,354,RS_Session_260_AU_2349_A_to_B.csv
+Uttar Pradesh,Electric,574967,RS_Session_260_AU_2349_A_to_B.csv
+Uttarakhand,Electric,49491,RS_Session_260_AU_2349_A_to_B.csv
+West Bengal,Electric,68376,RS_Session_260_AU_2349_A_to_B.csv
+Andaman and Nicobar Islands,Non-electric,161258,RS_Session_260_AU_2349_A_to_B.csv
+Andhra Pradesh,Non-electric,16553509,RS_Session_260_AU_2349_A_to_B.csv
+Arunachal Pradesh,Non-electric,303673,RS_Session_260_AU_2349_A_to_B.csv
+Assam,Non-electric,5312457,RS_Session_260_AU_2349_A_to_B.csv
+Bihar,Non-electric,11631081,RS_Session_260_AU_2349_A_to_B.csv
+Chandigarh,Non-electric,841172,RS_Session_260_AU_2349_A_to_B.csv
+Chhattisgarh,Non-electric,7413951,RS_Session_260_AU_2349_A_to_B.csv
+Delhi,Non-electric,13994966,RS_Session_260_AU_2349_A_to_B.csv
+Goa,Non-electric,1206476,RS_Session_260_AU_2349_A_to_B.csv
+Gujarat,Non-electric,22804558,RS_Session_260_AU_2349_A_to_B.csv
+Haryana,Non-electric,12062205,RS_Session_260_AU_2349_A_to_B.csv
+Himachal Pradesh,Non-electric,2178827,RS_Session_260_AU_2349_A_to_B.csv
+Jammu and Kashmir,Non-electric,2055765,RS_Session_260_AU_2349_A_to_B.csv
+Jharkhand,Non-electric,7057289,RS_Session_260_AU_2349_A_to_B.csv
+Karnataka,Non-electric,29785247,RS_Session_260_AU_2349_A_to_B.csv
+Kerala,Non-electric,16781110,RS_Session_260_AU_2349_A_to_B.csv
+Ladakh,Non-electric,44430,RS_Session_260_AU_2349_A_to_B.csv
+Madhya Pradesh,Non-electric,19616269,RS_Session_260_AU_2349_A_to_B.csv
+Maharashtra,Non-electric,34323748,RS_Session_260_AU_2349_A_to_B.csv
+Manipur,Non-electric,554994,RS_Session_260_AU_2349_A_to_B.csv
+Meghalaya,Non-electric,519714,RS_Session_260_AU_2349_A_to_B.csv
+Mizoram,Non-electric,355369,RS_Session_260_AU_2349_A_to_B.csv
+Nagaland,Non-electric,418529,RS_Session_260_AU_2349_A_to_B.csv
+Odisha,Non-electric,10638175,RS_Session_260_AU_2349_A_to_B.csv
+Puducherry,Non-electric,1330320,RS_Session_260_AU_2349_A_to_B.csv
+Punjab,Non-electric,13196875,RS_Session_260_AU_2349_A_to_B.csv
+Rajasthan,Non-electric,18857703,RS_Session_260_AU_2349_A_to_B.csv
+Sikkim,Non-electric,109988,RS_Session_260_AU_2349_A_to_B.csv
+Tamil Nadu,Non-electric,31618002,RS_Session_260_AU_2349_A_to_B.csv
+Tripura,Non-electric,707543,RS_Session_260_AU_2349_A_to_B.csv
+Dadra and Nagar Haveli and Daman and Diu,Non-electric,374489,RS_Session_260_AU_2349_A_to_B.csv
+Uttar Pradesh,Non-electric,43852548,RS_Session_260_AU_2349_A_to_B.csv
+Uttarakhand,Non-electric,3647377,RS_Session_260_AU_2349_A_to_B.csv
+West Bengal,Non-electric,15227219,RS_Session_260_AU_2349_A_to_B.csv

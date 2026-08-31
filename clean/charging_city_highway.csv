@@ -1,0 +1,15 @@
+Category,location,count,source_file
+City,Chandigarh,48,RS_Session_256_AU_2673_1.csv
+City,Delhi,94,RS_Session_256_AU_2673_1.csv
+City,Jaipur,49,RS_Session_256_AU_2673_1.csv
+City,B'Lore,60,RS_Session_256_AU_2673_1.csv
+City,Ranchi,30,RS_Session_256_AU_2673_1.csv
+City,Lucknow,1,RS_Session_256_AU_2673_1.csv
+City,Goa,30,RS_Session_256_AU_2673_1.csv
+City,Hyderabad,57,RS_Session_256_AU_2673_1.csv
+City,Agra,15,RS_Session_256_AU_2673_1.csv
+City,Shimla,9,RS_Session_256_AU_2673_1.csv
+Highway,Delhi -Chandigarh,24,RS_Session_256_AU_2673_1.csv
+Highway,Mum-Pune,16,RS_Session_256_AU_2673_1.csv
+Highway,Delhi- Jaipur- Agra,31,RS_Session_256_AU_2673_1.csv
+Highway,Jaipur-Delhi Highway,9,RS_Session_256_AU_2673_1.csv

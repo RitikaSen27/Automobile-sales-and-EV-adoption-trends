@@ -1,0 +1,511 @@
+state,vehicle_type_code,count,source_file
+Andaman and Nicobar Island,2WN,2.0,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,2WN,27629.0,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,2WN,14.0,RS_Session_258_AU_91_1.csv
+Assam,2WN,2287.0,RS_Session_258_AU_91_1.csv
+Bihar,2WN,13472.0,RS_Session_258_AU_91_1.csv
+Chandigarh,2WN,1004.0,RS_Session_258_AU_91_1.csv
+Chhattisgarh,2WN,20112.0,RS_Session_258_AU_91_1.csv
+Delhi,2WN,43627.0,RS_Session_258_AU_91_1.csv
+Goa,2WN,5555.0,RS_Session_258_AU_91_1.csv
+Gujarat,2WN,67990.0,RS_Session_258_AU_91_1.csv
+Haryana,2WN,17935.0,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,2WN,1190.0,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,2WN,3294.0,RS_Session_258_AU_91_1.csv
+Jharkhand,2WN,8744.0,RS_Session_258_AU_91_1.csv
+Karnataka,2WN,121733.0,RS_Session_258_AU_91_1.csv
+Kerala,2WN,38019.0,RS_Session_258_AU_91_1.csv
+Ladakh,2WN,26.0,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,2WN,11623.0,RS_Session_258_AU_91_1.csv
+Maharashtra,2WN,149977.0,RS_Session_258_AU_91_1.csv
+Manipur,2WN,143.0,RS_Session_258_AU_91_1.csv
+Meghalaya,2WN,35.0,RS_Session_258_AU_91_1.csv
+Mizoram,2WN,34.0,RS_Session_258_AU_91_1.csv
+Nagaland,2WN,50.0,RS_Session_258_AU_91_1.csv
+Odisha,2WN,32223.0,RS_Session_258_AU_91_1.csv
+Puducherry,2WN,2569.0,RS_Session_258_AU_91_1.csv
+Punjab,2WN,12784.0,RS_Session_258_AU_91_1.csv
+Rajasthan,2WN,69685.0,RS_Session_258_AU_91_1.csv
+Sikkim,2WN,1.0,RS_Session_258_AU_91_1.csv
+Tamil Nadu,2WN,96601.0,RS_Session_258_AU_91_1.csv
+Tripura,2WN,196.0,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,2WN,126.0,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,2WN,38043.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,2WN,7537.0,RS_Session_258_AU_91_1.csv
+West Bengal,2WN,9515.0,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,2WT,5.0,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,2WT,,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,2WT,,RS_Session_258_AU_91_1.csv
+Assam,2WT,,RS_Session_258_AU_91_1.csv
+Bihar,2WT,,RS_Session_258_AU_91_1.csv
+Chandigarh,2WT,,RS_Session_258_AU_91_1.csv
+Chhattisgarh,2WT,,RS_Session_258_AU_91_1.csv
+Delhi,2WT,,RS_Session_258_AU_91_1.csv
+Goa,2WT,1.0,RS_Session_258_AU_91_1.csv
+Gujarat,2WT,,RS_Session_258_AU_91_1.csv
+Haryana,2WT,53.0,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,2WT,,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,2WT,,RS_Session_258_AU_91_1.csv
+Jharkhand,2WT,,RS_Session_258_AU_91_1.csv
+Karnataka,2WT,9395.0,RS_Session_258_AU_91_1.csv
+Kerala,2WT,35.0,RS_Session_258_AU_91_1.csv
+Ladakh,2WT,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,2WT,,RS_Session_258_AU_91_1.csv
+Maharashtra,2WT,5.0,RS_Session_258_AU_91_1.csv
+Manipur,2WT,,RS_Session_258_AU_91_1.csv
+Meghalaya,2WT,,RS_Session_258_AU_91_1.csv
+Mizoram,2WT,,RS_Session_258_AU_91_1.csv
+Nagaland,2WT,,RS_Session_258_AU_91_1.csv
+Odisha,2WT,7.0,RS_Session_258_AU_91_1.csv
+Puducherry,2WT,,RS_Session_258_AU_91_1.csv
+Punjab,2WT,,RS_Session_258_AU_91_1.csv
+Rajasthan,2WT,70.0,RS_Session_258_AU_91_1.csv
+Sikkim,2WT,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,2WT,,RS_Session_258_AU_91_1.csv
+Tripura,2WT,,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,2WT,,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,2WT,20.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,2WT,7.0,RS_Session_258_AU_91_1.csv
+West Bengal,2WT,,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,2WIC,,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,2WIC,2.0,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,2WIC,,RS_Session_258_AU_91_1.csv
+Assam,2WIC,,RS_Session_258_AU_91_1.csv
+Bihar,2WIC,,RS_Session_258_AU_91_1.csv
+Chandigarh,2WIC,,RS_Session_258_AU_91_1.csv
+Chhattisgarh,2WIC,,RS_Session_258_AU_91_1.csv
+Delhi,2WIC,2.0,RS_Session_258_AU_91_1.csv
+Goa,2WIC,,RS_Session_258_AU_91_1.csv
+Gujarat,2WIC,3.0,RS_Session_258_AU_91_1.csv
+Haryana,2WIC,,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,2WIC,,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,2WIC,,RS_Session_258_AU_91_1.csv
+Jharkhand,2WIC,,RS_Session_258_AU_91_1.csv
+Karnataka,2WIC,7.0,RS_Session_258_AU_91_1.csv
+Kerala,2WIC,32.0,RS_Session_258_AU_91_1.csv
+Ladakh,2WIC,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,2WIC,,RS_Session_258_AU_91_1.csv
+Maharashtra,2WIC,4.0,RS_Session_258_AU_91_1.csv
+Manipur,2WIC,,RS_Session_258_AU_91_1.csv
+Meghalaya,2WIC,,RS_Session_258_AU_91_1.csv
+Mizoram,2WIC,,RS_Session_258_AU_91_1.csv
+Nagaland,2WIC,,RS_Session_258_AU_91_1.csv
+Odisha,2WIC,1.0,RS_Session_258_AU_91_1.csv
+Puducherry,2WIC,,RS_Session_258_AU_91_1.csv
+Punjab,2WIC,,RS_Session_258_AU_91_1.csv
+Rajasthan,2WIC,4.0,RS_Session_258_AU_91_1.csv
+Sikkim,2WIC,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,2WIC,2.0,RS_Session_258_AU_91_1.csv
+Tripura,2WIC,,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,2WIC,,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,2WIC,1.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,2WIC,,RS_Session_258_AU_91_1.csv
+West Bengal,2WIC,,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,3WN,,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,3WN,374.0,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,3WN,,RS_Session_258_AU_91_1.csv
+Assam,3WN,,RS_Session_258_AU_91_1.csv
+Bihar,3WN,2.0,RS_Session_258_AU_91_1.csv
+Chandigarh,3WN,,RS_Session_258_AU_91_1.csv
+Chhattisgarh,3WN,130.0,RS_Session_258_AU_91_1.csv
+Delhi,3WN,,RS_Session_258_AU_91_1.csv
+Goa,3WN,4.0,RS_Session_258_AU_91_1.csv
+Gujarat,3WN,32.0,RS_Session_258_AU_91_1.csv
+Haryana,3WN,,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,3WN,1.0,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,3WN,,RS_Session_258_AU_91_1.csv
+Jharkhand,3WN,,RS_Session_258_AU_91_1.csv
+Karnataka,3WN,30.0,RS_Session_258_AU_91_1.csv
+Kerala,3WN,78.0,RS_Session_258_AU_91_1.csv
+Ladakh,3WN,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,3WN,,RS_Session_258_AU_91_1.csv
+Maharashtra,3WN,37.0,RS_Session_258_AU_91_1.csv
+Manipur,3WN,,RS_Session_258_AU_91_1.csv
+Meghalaya,3WN,7.0,RS_Session_258_AU_91_1.csv
+Mizoram,3WN,,RS_Session_258_AU_91_1.csv
+Nagaland,3WN,,RS_Session_258_AU_91_1.csv
+Odisha,3WN,2.0,RS_Session_258_AU_91_1.csv
+Puducherry,3WN,4.0,RS_Session_258_AU_91_1.csv
+Punjab,3WN,1.0,RS_Session_258_AU_91_1.csv
+Rajasthan,3WN,,RS_Session_258_AU_91_1.csv
+Sikkim,3WN,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,3WN,41.0,RS_Session_258_AU_91_1.csv
+Tripura,3WN,,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,3WN,,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,3WN,1.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,3WN,,RS_Session_258_AU_91_1.csv
+West Bengal,3WN,,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,3WT,30.0,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,3WT,108.0,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,3WT,,RS_Session_258_AU_91_1.csv
+Assam,3WT,79661.0,RS_Session_258_AU_91_1.csv
+Bihar,3WT,96560.0,RS_Session_258_AU_91_1.csv
+Chandigarh,3WT,2683.0,RS_Session_258_AU_91_1.csv
+Chhattisgarh,3WT,9865.0,RS_Session_258_AU_91_1.csv
+Delhi,3WT,130429.0,RS_Session_258_AU_91_1.csv
+Goa,3WT,55.0,RS_Session_258_AU_91_1.csv
+Gujarat,3WT,2964.0,RS_Session_258_AU_91_1.csv
+Haryana,3WT,29699.0,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,3WT,183.0,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,3WT,2148.0,RS_Session_258_AU_91_1.csv
+Jharkhand,3WT,14407.0,RS_Session_258_AU_91_1.csv
+Karnataka,3WT,7105.0,RS_Session_258_AU_91_1.csv
+Kerala,3WT,4008.0,RS_Session_258_AU_91_1.csv
+Ladakh,3WT,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,3WT,,RS_Session_258_AU_91_1.csv
+Maharashtra,3WT,11334.0,RS_Session_258_AU_91_1.csv
+Manipur,3WT,610.0,RS_Session_258_AU_91_1.csv
+Meghalaya,3WT,7.0,RS_Session_258_AU_91_1.csv
+Mizoram,3WT,1.0,RS_Session_258_AU_91_1.csv
+Nagaland,3WT,,RS_Session_258_AU_91_1.csv
+Odisha,3WT,3638.0,RS_Session_258_AU_91_1.csv
+Puducherry,3WT,49.0,RS_Session_258_AU_91_1.csv
+Punjab,3WT,8101.0,RS_Session_258_AU_91_1.csv
+Rajasthan,3WT,48898.0,RS_Session_258_AU_91_1.csv
+Sikkim,3WT,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,3WT,6885.0,RS_Session_258_AU_91_1.csv
+Tripura,3WT,10708.0,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,3WT,56.0,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,3WT,375595.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,3WT,30122.0,RS_Session_258_AU_91_1.csv
+West Bengal,3WT,42372.0,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,LMV,86.0,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,LMV,1050.0,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,LMV,6.0,RS_Session_258_AU_91_1.csv
+Assam,LMV,233.0,RS_Session_258_AU_91_1.csv
+Bihar,LMV,231.0,RS_Session_258_AU_91_1.csv
+Chandigarh,LMV,391.0,RS_Session_258_AU_91_1.csv
+Chhattisgarh,LMV,396.0,RS_Session_258_AU_91_1.csv
+Delhi,LMV,5796.0,RS_Session_258_AU_91_1.csv
+Goa,LMV,861.0,RS_Session_258_AU_91_1.csv
+Gujarat,LMV,3926.0,RS_Session_258_AU_91_1.csv
+Haryana,LMV,425.0,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,LMV,69.0,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,LMV,55.0,RS_Session_258_AU_91_1.csv
+Jharkhand,LMV,212.0,RS_Session_258_AU_91_1.csv
+Karnataka,LMV,9265.0,RS_Session_258_AU_91_1.csv
+Kerala,LMV,5746.0,RS_Session_258_AU_91_1.csv
+Ladakh,LMV,10.0,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,LMV,169.0,RS_Session_258_AU_91_1.csv
+Maharashtra,LMV,15583.0,RS_Session_258_AU_91_1.csv
+Manipur,LMV,4.0,RS_Session_258_AU_91_1.csv
+Meghalaya,LMV,20.0,RS_Session_258_AU_91_1.csv
+Mizoram,LMV,3.0,RS_Session_258_AU_91_1.csv
+Nagaland,LMV,6.0,RS_Session_258_AU_91_1.csv
+Odisha,LMV,468.0,RS_Session_258_AU_91_1.csv
+Puducherry,LMV,97.0,RS_Session_258_AU_91_1.csv
+Punjab,LMV,148.0,RS_Session_258_AU_91_1.csv
+Rajasthan,LMV,2026.0,RS_Session_258_AU_91_1.csv
+Sikkim,LMV,10.0,RS_Session_258_AU_91_1.csv
+Tamil Nadu,LMV,4101.0,RS_Session_258_AU_91_1.csv
+Tripura,LMV,11.0,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,LMV,31.0,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,LMV,518.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,LMV,469.0,RS_Session_258_AU_91_1.csv
+West Bengal,LMV,1305.0,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,LPV,6.0,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,LPV,3.0,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,LPV,1.0,RS_Session_258_AU_91_1.csv
+Assam,LPV,5.0,RS_Session_258_AU_91_1.csv
+Bihar,LPV,8.0,RS_Session_258_AU_91_1.csv
+Chandigarh,LPV,2.0,RS_Session_258_AU_91_1.csv
+Chhattisgarh,LPV,44.0,RS_Session_258_AU_91_1.csv
+Delhi,LPV,3415.0,RS_Session_258_AU_91_1.csv
+Goa,LPV,4.0,RS_Session_258_AU_91_1.csv
+Gujarat,LPV,91.0,RS_Session_258_AU_91_1.csv
+Haryana,LPV,478.0,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,LPV,56.0,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,LPV,9.0,RS_Session_258_AU_91_1.csv
+Jharkhand,LPV,99.0,RS_Session_258_AU_91_1.csv
+Karnataka,LPV,2160.0,RS_Session_258_AU_91_1.csv
+Kerala,LPV,47.0,RS_Session_258_AU_91_1.csv
+Ladakh,LPV,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,LPV,,RS_Session_258_AU_91_1.csv
+Maharashtra,LPV,954.0,RS_Session_258_AU_91_1.csv
+Manipur,LPV,1.0,RS_Session_258_AU_91_1.csv
+Meghalaya,LPV,,RS_Session_258_AU_91_1.csv
+Mizoram,LPV,4.0,RS_Session_258_AU_91_1.csv
+Nagaland,LPV,1.0,RS_Session_258_AU_91_1.csv
+Odisha,LPV,44.0,RS_Session_258_AU_91_1.csv
+Puducherry,LPV,36.0,RS_Session_258_AU_91_1.csv
+Punjab,LPV,18.0,RS_Session_258_AU_91_1.csv
+Rajasthan,LPV,58.0,RS_Session_258_AU_91_1.csv
+Sikkim,LPV,9.0,RS_Session_258_AU_91_1.csv
+Tamil Nadu,LPV,203.0,RS_Session_258_AU_91_1.csv
+Tripura,LPV,1.0,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,LPV,1.0,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,LPV,34.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,LPV,36.0,RS_Session_258_AU_91_1.csv
+West Bengal,LPV,188.0,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,LGV,,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,LGV,166.0,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,LGV,,RS_Session_258_AU_91_1.csv
+Assam,LGV,15.0,RS_Session_258_AU_91_1.csv
+Bihar,LGV,21.0,RS_Session_258_AU_91_1.csv
+Chandigarh,LGV,,RS_Session_258_AU_91_1.csv
+Chhattisgarh,LGV,1070.0,RS_Session_258_AU_91_1.csv
+Delhi,LGV,50.0,RS_Session_258_AU_91_1.csv
+Goa,LGV,25.0,RS_Session_258_AU_91_1.csv
+Gujarat,LGV,51.0,RS_Session_258_AU_91_1.csv
+Haryana,LGV,118.0,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,LGV,2.0,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,LGV,4.0,RS_Session_258_AU_91_1.csv
+Jharkhand,LGV,11.0,RS_Session_258_AU_91_1.csv
+Karnataka,LGV,103.0,RS_Session_258_AU_91_1.csv
+Kerala,LGV,37.0,RS_Session_258_AU_91_1.csv
+Ladakh,LGV,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,LGV,,RS_Session_258_AU_91_1.csv
+Maharashtra,LGV,49.0,RS_Session_258_AU_91_1.csv
+Manipur,LGV,,RS_Session_258_AU_91_1.csv
+Meghalaya,LGV,2.0,RS_Session_258_AU_91_1.csv
+Mizoram,LGV,,RS_Session_258_AU_91_1.csv
+Nagaland,LGV,,RS_Session_258_AU_91_1.csv
+Odisha,LGV,35.0,RS_Session_258_AU_91_1.csv
+Puducherry,LGV,9.0,RS_Session_258_AU_91_1.csv
+Punjab,LGV,34.0,RS_Session_258_AU_91_1.csv
+Rajasthan,LGV,19.0,RS_Session_258_AU_91_1.csv
+Sikkim,LGV,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,LGV,1406.0,RS_Session_258_AU_91_1.csv
+Tripura,LGV,8.0,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,LGV,2.0,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,LGV,81.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,LGV,1.0,RS_Session_258_AU_91_1.csv
+West Bengal,LGV,20.0,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,4WIC,,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,4WIC,,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,4WIC,,RS_Session_258_AU_91_1.csv
+Assam,4WIC,,RS_Session_258_AU_91_1.csv
+Bihar,4WIC,1.0,RS_Session_258_AU_91_1.csv
+Chandigarh,4WIC,,RS_Session_258_AU_91_1.csv
+Chhattisgarh,4WIC,,RS_Session_258_AU_91_1.csv
+Delhi,4WIC,4.0,RS_Session_258_AU_91_1.csv
+Goa,4WIC,,RS_Session_258_AU_91_1.csv
+Gujarat,4WIC,6.0,RS_Session_258_AU_91_1.csv
+Haryana,4WIC,,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,4WIC,,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,4WIC,,RS_Session_258_AU_91_1.csv
+Jharkhand,4WIC,,RS_Session_258_AU_91_1.csv
+Karnataka,4WIC,1.0,RS_Session_258_AU_91_1.csv
+Kerala,4WIC,2.0,RS_Session_258_AU_91_1.csv
+Ladakh,4WIC,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,4WIC,,RS_Session_258_AU_91_1.csv
+Maharashtra,4WIC,1.0,RS_Session_258_AU_91_1.csv
+Manipur,4WIC,,RS_Session_258_AU_91_1.csv
+Meghalaya,4WIC,,RS_Session_258_AU_91_1.csv
+Mizoram,4WIC,,RS_Session_258_AU_91_1.csv
+Nagaland,4WIC,,RS_Session_258_AU_91_1.csv
+Odisha,4WIC,,RS_Session_258_AU_91_1.csv
+Puducherry,4WIC,,RS_Session_258_AU_91_1.csv
+Punjab,4WIC,,RS_Session_258_AU_91_1.csv
+Rajasthan,4WIC,,RS_Session_258_AU_91_1.csv
+Sikkim,4WIC,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,4WIC,,RS_Session_258_AU_91_1.csv
+Tripura,4WIC,,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,4WIC,,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,4WIC,,RS_Session_258_AU_91_1.csv
+Uttarakhand,4WIC,,RS_Session_258_AU_91_1.csv
+West Bengal,4WIC,1.0,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,MMV,,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,MMV,,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,MMV,,RS_Session_258_AU_91_1.csv
+Assam,MMV,,RS_Session_258_AU_91_1.csv
+Bihar,MMV,,RS_Session_258_AU_91_1.csv
+Chandigarh,MMV,,RS_Session_258_AU_91_1.csv
+Chhattisgarh,MMV,,RS_Session_258_AU_91_1.csv
+Delhi,MMV,,RS_Session_258_AU_91_1.csv
+Goa,MMV,,RS_Session_258_AU_91_1.csv
+Gujarat,MMV,2.0,RS_Session_258_AU_91_1.csv
+Haryana,MMV,,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,MMV,,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,MMV,,RS_Session_258_AU_91_1.csv
+Jharkhand,MMV,,RS_Session_258_AU_91_1.csv
+Karnataka,MMV,,RS_Session_258_AU_91_1.csv
+Kerala,MMV,,RS_Session_258_AU_91_1.csv
+Ladakh,MMV,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,MMV,,RS_Session_258_AU_91_1.csv
+Maharashtra,MMV,4.0,RS_Session_258_AU_91_1.csv
+Manipur,MMV,,RS_Session_258_AU_91_1.csv
+Meghalaya,MMV,,RS_Session_258_AU_91_1.csv
+Mizoram,MMV,,RS_Session_258_AU_91_1.csv
+Nagaland,MMV,,RS_Session_258_AU_91_1.csv
+Odisha,MMV,,RS_Session_258_AU_91_1.csv
+Puducherry,MMV,,RS_Session_258_AU_91_1.csv
+Punjab,MMV,,RS_Session_258_AU_91_1.csv
+Rajasthan,MMV,,RS_Session_258_AU_91_1.csv
+Sikkim,MMV,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,MMV,,RS_Session_258_AU_91_1.csv
+Tripura,MMV,,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,MMV,,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,MMV,,RS_Session_258_AU_91_1.csv
+Uttarakhand,MMV,,RS_Session_258_AU_91_1.csv
+West Bengal,MMV,,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,MPV,,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,MPV,,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,MPV,,RS_Session_258_AU_91_1.csv
+Assam,MPV,,RS_Session_258_AU_91_1.csv
+Bihar,MPV,,RS_Session_258_AU_91_1.csv
+Chandigarh,MPV,7.0,RS_Session_258_AU_91_1.csv
+Chhattisgarh,MPV,1.0,RS_Session_258_AU_91_1.csv
+Delhi,MPV,2.0,RS_Session_258_AU_91_1.csv
+Goa,MPV,,RS_Session_258_AU_91_1.csv
+Gujarat,MPV,60.0,RS_Session_258_AU_91_1.csv
+Haryana,MPV,2.0,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,MPV,2.0,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,MPV,2.0,RS_Session_258_AU_91_1.csv
+Jharkhand,MPV,,RS_Session_258_AU_91_1.csv
+Karnataka,MPV,,RS_Session_258_AU_91_1.csv
+Kerala,MPV,1.0,RS_Session_258_AU_91_1.csv
+Ladakh,MPV,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,MPV,,RS_Session_258_AU_91_1.csv
+Maharashtra,MPV,242.0,RS_Session_258_AU_91_1.csv
+Manipur,MPV,,RS_Session_258_AU_91_1.csv
+Meghalaya,MPV,,RS_Session_258_AU_91_1.csv
+Mizoram,MPV,,RS_Session_258_AU_91_1.csv
+Nagaland,MPV,,RS_Session_258_AU_91_1.csv
+Odisha,MPV,,RS_Session_258_AU_91_1.csv
+Puducherry,MPV,,RS_Session_258_AU_91_1.csv
+Punjab,MPV,1.0,RS_Session_258_AU_91_1.csv
+Rajasthan,MPV,,RS_Session_258_AU_91_1.csv
+Sikkim,MPV,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,MPV,,RS_Session_258_AU_91_1.csv
+Tripura,MPV,,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,MPV,,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,MPV,51.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,MPV,1.0,RS_Session_258_AU_91_1.csv
+West Bengal,MPV,49.0,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,MGV,,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,MGV,,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,MGV,,RS_Session_258_AU_91_1.csv
+Assam,MGV,,RS_Session_258_AU_91_1.csv
+Bihar,MGV,1.0,RS_Session_258_AU_91_1.csv
+Chandigarh,MGV,,RS_Session_258_AU_91_1.csv
+Chhattisgarh,MGV,,RS_Session_258_AU_91_1.csv
+Delhi,MGV,,RS_Session_258_AU_91_1.csv
+Goa,MGV,,RS_Session_258_AU_91_1.csv
+Gujarat,MGV,6.0,RS_Session_258_AU_91_1.csv
+Haryana,MGV,,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,MGV,1.0,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,MGV,,RS_Session_258_AU_91_1.csv
+Jharkhand,MGV,,RS_Session_258_AU_91_1.csv
+Karnataka,MGV,4.0,RS_Session_258_AU_91_1.csv
+Kerala,MGV,,RS_Session_258_AU_91_1.csv
+Ladakh,MGV,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,MGV,,RS_Session_258_AU_91_1.csv
+Maharashtra,MGV,,RS_Session_258_AU_91_1.csv
+Manipur,MGV,1.0,RS_Session_258_AU_91_1.csv
+Meghalaya,MGV,1.0,RS_Session_258_AU_91_1.csv
+Mizoram,MGV,,RS_Session_258_AU_91_1.csv
+Nagaland,MGV,,RS_Session_258_AU_91_1.csv
+Odisha,MGV,1.0,RS_Session_258_AU_91_1.csv
+Puducherry,MGV,,RS_Session_258_AU_91_1.csv
+Punjab,MGV,2.0,RS_Session_258_AU_91_1.csv
+Rajasthan,MGV,,RS_Session_258_AU_91_1.csv
+Sikkim,MGV,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,MGV,4.0,RS_Session_258_AU_91_1.csv
+Tripura,MGV,,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,MGV,,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,MGV,,RS_Session_258_AU_91_1.csv
+Uttarakhand,MGV,,RS_Session_258_AU_91_1.csv
+West Bengal,MGV,1.0,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,HPV,40.0,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,HPV,,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,HPV,,RS_Session_258_AU_91_1.csv
+Assam,HPV,15.0,RS_Session_258_AU_91_1.csv
+Bihar,HPV,27.0,RS_Session_258_AU_91_1.csv
+Chandigarh,HPV,73.0,RS_Session_258_AU_91_1.csv
+Chhattisgarh,HPV,,RS_Session_258_AU_91_1.csv
+Delhi,HPV,416.0,RS_Session_258_AU_91_1.csv
+Goa,HPV,51.0,RS_Session_258_AU_91_1.csv
+Gujarat,HPV,364.0,RS_Session_258_AU_91_1.csv
+Haryana,HPV,6.0,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,HPV,74.0,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,HPV,40.0,RS_Session_258_AU_91_1.csv
+Jharkhand,HPV,1.0,RS_Session_258_AU_91_1.csv
+Karnataka,HPV,370.0,RS_Session_258_AU_91_1.csv
+Kerala,HPV,50.0,RS_Session_258_AU_91_1.csv
+Ladakh,HPV,8.0,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,HPV,,RS_Session_258_AU_91_1.csv
+Maharashtra,HPV,890.0,RS_Session_258_AU_91_1.csv
+Manipur,HPV,,RS_Session_258_AU_91_1.csv
+Meghalaya,HPV,,RS_Session_258_AU_91_1.csv
+Mizoram,HPV,,RS_Session_258_AU_91_1.csv
+Nagaland,HPV,,RS_Session_258_AU_91_1.csv
+Odisha,HPV,10.0,RS_Session_258_AU_91_1.csv
+Puducherry,HPV,1.0,RS_Session_258_AU_91_1.csv
+Punjab,HPV,1.0,RS_Session_258_AU_91_1.csv
+Rajasthan,HPV,2.0,RS_Session_258_AU_91_1.csv
+Sikkim,HPV,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,HPV,9.0,RS_Session_258_AU_91_1.csv
+Tripura,HPV,,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,HPV,24.0,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,HPV,633.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,HPV,34.0,RS_Session_258_AU_91_1.csv
+West Bengal,HPV,58.0,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,HGV,,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,HGV,,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,HGV,,RS_Session_258_AU_91_1.csv
+Assam,HGV,,RS_Session_258_AU_91_1.csv
+Bihar,HGV,2.0,RS_Session_258_AU_91_1.csv
+Chandigarh,HGV,,RS_Session_258_AU_91_1.csv
+Chhattisgarh,HGV,7.0,RS_Session_258_AU_91_1.csv
+Delhi,HGV,,RS_Session_258_AU_91_1.csv
+Goa,HGV,1.0,RS_Session_258_AU_91_1.csv
+Gujarat,HGV,7.0,RS_Session_258_AU_91_1.csv
+Haryana,HGV,10.0,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,HGV,5.0,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,HGV,2.0,RS_Session_258_AU_91_1.csv
+Jharkhand,HGV,12.0,RS_Session_258_AU_91_1.csv
+Karnataka,HGV,5.0,RS_Session_258_AU_91_1.csv
+Kerala,HGV,,RS_Session_258_AU_91_1.csv
+Ladakh,HGV,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,HGV,,RS_Session_258_AU_91_1.csv
+Maharashtra,HGV,2.0,RS_Session_258_AU_91_1.csv
+Manipur,HGV,,RS_Session_258_AU_91_1.csv
+Meghalaya,HGV,,RS_Session_258_AU_91_1.csv
+Mizoram,HGV,2.0,RS_Session_258_AU_91_1.csv
+Nagaland,HGV,3.0,RS_Session_258_AU_91_1.csv
+Odisha,HGV,7.0,RS_Session_258_AU_91_1.csv
+Puducherry,HGV,,RS_Session_258_AU_91_1.csv
+Punjab,HGV,10.0,RS_Session_258_AU_91_1.csv
+Rajasthan,HGV,6.0,RS_Session_258_AU_91_1.csv
+Sikkim,HGV,1.0,RS_Session_258_AU_91_1.csv
+Tamil Nadu,HGV,15.0,RS_Session_258_AU_91_1.csv
+Tripura,HGV,,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,HGV,2.0,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,HGV,,RS_Session_258_AU_91_1.csv
+Uttarakhand,HGV,,RS_Session_258_AU_91_1.csv
+West Bengal,HGV,7.0,RS_Session_258_AU_91_1.csv
+Andaman and Nicobar Island,OTH,,RS_Session_258_AU_91_1.csv
+Andhra Pradesh,OTH,1117.0,RS_Session_258_AU_91_1.csv
+Arunachal Pradesh,OTH,,RS_Session_258_AU_91_1.csv
+Assam,OTH,,RS_Session_258_AU_91_1.csv
+Bihar,OTH,,RS_Session_258_AU_91_1.csv
+Chandigarh,OTH,1.0,RS_Session_258_AU_91_1.csv
+Chhattisgarh,OTH,367.0,RS_Session_258_AU_91_1.csv
+Delhi,OTH,,RS_Session_258_AU_91_1.csv
+Goa,OTH,2.0,RS_Session_258_AU_91_1.csv
+Gujarat,OTH,153.0,RS_Session_258_AU_91_1.csv
+Haryana,OTH,,RS_Session_258_AU_91_1.csv
+Himachal Pradesh,OTH,,RS_Session_258_AU_91_1.csv
+Jammu and Kashmir,OTH,,RS_Session_258_AU_91_1.csv
+Jharkhand,OTH,,RS_Session_258_AU_91_1.csv
+Karnataka,OTH,1.0,RS_Session_258_AU_91_1.csv
+Kerala,OTH,,RS_Session_258_AU_91_1.csv
+Ladakh,OTH,,RS_Session_258_AU_91_1.csv
+Madhya Pradesh,OTH,,RS_Session_258_AU_91_1.csv
+Maharashtra,OTH,5.0,RS_Session_258_AU_91_1.csv
+Manipur,OTH,,RS_Session_258_AU_91_1.csv
+Meghalaya,OTH,,RS_Session_258_AU_91_1.csv
+Mizoram,OTH,,RS_Session_258_AU_91_1.csv
+Nagaland,OTH,,RS_Session_258_AU_91_1.csv
+Odisha,OTH,1.0,RS_Session_258_AU_91_1.csv
+Puducherry,OTH,,RS_Session_258_AU_91_1.csv
+Punjab,OTH,3.0,RS_Session_258_AU_91_1.csv
+Rajasthan,OTH,1.0,RS_Session_258_AU_91_1.csv
+Sikkim,OTH,,RS_Session_258_AU_91_1.csv
+Tamil Nadu,OTH,5.0,RS_Session_258_AU_91_1.csv
+Tripura,OTH,,RS_Session_258_AU_91_1.csv
+Dadra and Nagar Haveli and Daman and Diu,OTH,4.0,RS_Session_258_AU_91_1.csv
+Uttar Pradesh,OTH,1.0,RS_Session_258_AU_91_1.csv
+Uttarakhand,OTH,,RS_Session_258_AU_91_1.csv
+West Bengal,OTH,,RS_Session_258_AU_91_1.csv

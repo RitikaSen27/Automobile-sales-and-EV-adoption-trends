@@ -1,0 +1,31 @@
+year,vehicle_category,total_vehicles,ev_count,ev_pct,source_file
+2018,Two Wheeler,19576235,17067,0.09,RS_Session_260_AU_1872_A_and_B.csv
+2019,Two Wheeler,18644700,30389,0.16,RS_Session_260_AU_1872_A_and_B.csv
+2020,Two Wheeler,14305129,29113,0.2,RS_Session_260_AU_1872_A_and_B.csv
+2021,Two Wheeler,13926217,156243,1.12,RS_Session_260_AU_1872_A_and_B.csv
+2022,Two Wheeler,15592118,631181,4.05,RS_Session_260_AU_1872_A_and_B.csv
+2023 (Till 01-08-2023),Two Wheeler,9276337,489637,5.28,RS_Session_260_AU_1872_A_and_B.csv
+2018,Three Wheeler,764806,110133,14.4,RS_Session_260_AU_1872_A_and_B.csv
+2019,Three Wheeler,765867,133489,17.43,RS_Session_260_AU_1872_A_and_B.csv
+2020,Three Wheeler,400893,90385,22.55,RS_Session_260_AU_1872_A_and_B.csv
+2021,Three Wheeler,390820,158129,40.46,RS_Session_260_AU_1872_A_and_B.csv
+2022,Three Wheeler,677034,350247,51.73,RS_Session_260_AU_1872_A_and_B.csv
+2023 (Till 01-08-2023),Three Wheeler,572654,300114,52.41,RS_Session_260_AU_1872_A_and_B.csv
+2018,Four Wheeler,2999288,1047,0.03,RS_Session_260_AU_1872_A_and_B.csv
+2019,Four Wheeler,2822782,962,0.03,RS_Session_260_AU_1872_A_and_B.csv
+2020,Four Wheeler,2396428,3207,0.13,RS_Session_260_AU_1872_A_and_B.csv
+2021,Four Wheeler,2945340,12259,0.42,RS_Session_260_AU_1872_A_and_B.csv
+2022,Four Wheeler,3346973,33205,0.99,RS_Session_260_AU_1872_A_and_B.csv
+2023 (Till 01-08-2023),Four Wheeler,2020459,40186,1.99,RS_Session_260_AU_1872_A_and_B.csv
+2018,Goods Vehicles,886047,658,0.07,RS_Session_260_AU_1872_A_and_B.csv
+2019,Goods Vehicles,799661,54,0.01,RS_Session_260_AU_1872_A_and_B.csv
+2020,Goods Vehicles,503358,15,0.0,RS_Session_260_AU_1872_A_and_B.csv
+2021,Goods Vehicles,602805,1118,0.19,RS_Session_260_AU_1872_A_and_B.csv
+2022,Goods Vehicles,804409,653,0.08,RS_Session_260_AU_1872_A_and_B.csv
+2023 (Till 01-08-2023),Goods Vehicles,490920,1512,0.31,RS_Session_260_AU_1872_A_and_B.csv
+2018,Public Service Vehicle,79317,50,0.06,RS_Session_260_AU_1872_A_and_B.csv
+2019,Public Service Vehicle,81022,508,0.63,RS_Session_260_AU_1872_A_and_B.csv
+2020,Public Service Vehicle,40328,88,0.22,RS_Session_260_AU_1872_A_and_B.csv
+2021,Public Service Vehicle,15434,1177,7.63,RS_Session_260_AU_1872_A_and_B.csv
+2022,Public Service Vehicle,45448,1972,4.34,RS_Session_260_AU_1872_A_and_B.csv
+2023 (Till 01-08-2023),Public Service Vehicle,47058,985,2.09,RS_Session_260_AU_1872_A_and_B.csv

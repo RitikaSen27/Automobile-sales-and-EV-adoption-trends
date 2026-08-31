@@ -1,0 +1,5 @@
+Category,sales_2022,sales_2023,pct_growth,source_file
+2 Wheelers,631464,859376,36.09,RS_Session_263_AU_102_A.csv
+3 Wheelers,352710,582793,65.23,RS_Session_263_AU_102_A.csv
+Commercial Vehicles,2649,5673,114.16,RS_Session_263_AU_102_A.csv
+Passenger Vehicles,38240,82105,114.71,RS_Session_263_AU_102_A.csv

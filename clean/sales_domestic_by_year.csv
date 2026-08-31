@@ -1,0 +1,10 @@
+Category,Fuel Types,domestic_sales,year,source_file
+Passenger Vehicles (e-4W),EVs,5000,2020-21,RS_Session_260_AS_241_E.csv
+Three Wheelers (e-3W),EVs,88000,2020-21,RS_Session_260_AS_241_E.csv
+Two Wheelers (e-2W),EVs,41000,2020-21,RS_Session_260_AS_241_E.csv
+Passenger Vehicles (e-4W),EVs,19000,2021-22,RS_Session_260_AS_241_E.csv
+Three Wheelers (e-3W),EVs,178000,2021-22,RS_Session_260_AS_241_E.csv
+Two Wheelers (e-2W),EVs,231000,2021-22,RS_Session_260_AS_241_E.csv
+Passenger Vehicles (e-4W),EVs,47581,2022-23,RS_Session_260_AS_241_E.csv
+Three Wheelers (e-3W),EVs,402106,2022-23,RS_Session_260_AS_241_E.csv
+Two Wheelers (e-2W),EVs,728027,2022-23,RS_Session_260_AS_241_E.csv
