@@ -14,15 +14,16 @@ All 40 datasets in `datasets/` are sourced from **Rajya Sabha unstarred/starred 
 
 ```
 ├── datasets/                                    # Raw source CSVs (40 files, as published)
-├── clean/                                        # Cleaned, theme-grouped master tables (generated, gitignored)
+├── clean/                                        # Cleaned, theme-grouped master tables (25 CSVs)
 ├── ev_cleaning.ipynb                             # Data cleaning & consolidation notebook (Python)
+├── ev_analysis.ipynb                             # Exploratory data analysis & visualization (Python)
 ├── EV_Adoption_Project_Documentation.Rmd         # Key insights summary, by theme (R Markdown)
 └── README.md
 ```
 
 ## Data Themes & Master Tables
 
-The 40 raw files were grouped into 7 themes and consolidated into 29 cleaned master tables:
+The 40 raw files were grouped into 7 themes and consolidated into 25 cleaned master tables:
 
 | Theme | Files | Description |
 |---|---|---|
@@ -36,21 +37,31 @@ The 40 raw files were grouped into 7 themes and consolidated into 29 cleaned mas
 
 ## Methodology
 
+**Cleaning (`ev_cleaning.ipynb`):**
 1. **Inventory** — scanned all 40 raw files for shape, columns, and encoding issues before making structural assumptions
 2. **Clean** — standardized column names, fixed typos, handled inconsistent representations of missing/approximate values (`NA`, `"approx."`, comma-formatted numbers)
 3. **Consolidate** — grouped files by business theme and merged into master tables, reshaping wide-format files into long format where needed
 4. **Verify** — checked for and removed hidden summary/total rows, and identified duplicate files (same underlying data published under different filenames) to avoid double-counting
-5. **Document insights** — captured key findings per theme as they emerged, rather than after the fact
 
-## Key Findings (Summary)
+**Analysis (`ev_analysis.ipynb`):**
+Structured question-by-question rather than theme-by-theme, using the cleaned master tables:
+1. How has EV registration grown over time?
+2. Which vehicle categories are adopting EVs fastest?
+3. Which states lead in EV adoption and charging infrastructure?
+4. Is government subsidy funding keeping pace with targets?
+5. How does India's growth compare to global trends? *(in progress)*
+
+## Key Findings
 
 - India's EV adoption is **led by three-wheelers (especially e-rickshaws)**, not passenger cars — three-wheeler EV share rose from 14.4% (2018) to over 52% (2023), while passenger cars stayed under 2%.
-- Adoption is **highly concentrated geographically** — a handful of states account for the vast majority of registrations and charging infrastructure.
-- Government scheme **budget allocation has grown ~69x since 2015-16**, but fund utilization and subsidy uptake consistently lag allocation and targets, especially for 3-wheelers and 4-wheelers.
+- EV registration growth accelerated sharply from 2021 onward, though **fiscal-year vs. calendar-year reporting mismatches** across sources make exact recent-year figures uncertain — a real data limitation, not a decline in adoption.
+- Adoption is **highly concentrated geographically**, but not always where expected — **Uttar Pradesh has the highest EV count by far (574,967) yet ranks only 3rd in charging infrastructure**, while **Karnataka leads in charging stations (5,765)** despite a smaller EV fleet — suggesting infrastructure rollout isn't purely demand-driven.
+- Government scheme **budget allocation has grown ~69x since 2015-16**, with full utilization through 2021-22 — but a **significant utilization gap opened up from 2022-23 onward**, reaching a low of ~38% utilized in 2023-24 despite the largest-ever allocation that year.
+- **Subsidy target achievement varies sharply by vehicle category** — e-2W reached 79.3% of its target, while e-3W (16.2%), e-4W (12.4%), and e-Buses (34.3%) fell well short — showing that strong *market* adoption (e.g. 3-wheelers) doesn't necessarily mean the *subsidy scheme* itself is succeeding.
 - India's growth mirrors a **global shift away from China-dominated EV markets**, with Europe emerging as the fastest-growing region.
 
 Full theme-by-theme insights are documented in `EV_Adoption_Project_Documentation.Rmd`.
 
 ## Status
 
-🚧 In progress — all 7 themes cleaned, consolidated, and documented. Next: exploratory data analysis, visualization, dashboard, and final report.
+🚧 In progress — data cleaning complete (7 themes, 25 master tables). Exploratory analysis underway (4 of 5 core questions complete). Next: finish global comparison analysis, build dashboard, write final report.
