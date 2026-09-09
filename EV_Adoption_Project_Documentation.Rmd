@@ -15,15 +15,20 @@ knitr::opts_chunk$set(eval = FALSE, echo = TRUE)
 
 ## Project Overview
 
-This document summarizes the key insights found while cleaning and consolidating
-40 datasets on **EV adoption trends in India**, sourced from Rajya Sabha
-(Parliament) session records. All actual data processing is done in Python in
-`ev_cleaning.ipynb` (in this repository); this document focuses on **what the
-data actually shows**, theme by theme, rather than the cleaning steps
-themselves.
+This document summarizes the key insights found while cleaning, consolidating, and
+analyzing 40 datasets on **EV adoption trends in India**, sourced from Rajya Sabha
+(Parliament) session records. All actual data processing is done in Python, split
+across two notebooks in this repository — `ev_cleaning.ipynb` (data cleaning and
+consolidation) and `ev_analysis.ipynb` (exploratory data analysis and
+visualization). This document focuses on **what the data actually shows**, rather
+than the code itself.
 
-The 40 raw files were grouped into 7 themes and consolidated into 29 master
-tables total. Each theme's findings are below.
+The 40 raw files were grouped into 7 themes and consolidated into 25 master
+tables. Part 1 below covers insights found during cleaning, theme by theme. Part 2
+covers insights found during exploratory analysis, structured question by
+question.
+
+# Part 1: Cleaning Insights, by Theme
 
 ## Theme 1: EV Registration Trends
 
@@ -43,144 +48,163 @@ tables total. Each theme's findings are below.
 - **Takeaway:** "EV adoption in India" is really a three-wheeler-led
   transition first, with two-wheelers following at a distance, and passenger
   cars barely moving yet.
-- *Caveat:* these are separate government disclosures answering separate
-  Parliament questions, not one continuous time series — cross-file
-  comparisons (like the 2020 dip) are suggestive, not statistically
-  confirmed, until formally joined during EDA.
 
 ## Theme 2: State-wise EV Data
 
 - EV adoption is highly concentrated geographically — large states like Uttar
   Pradesh show EV counts in the hundreds of thousands, while smaller
-  states/UTs (Andaman & Nicobar, Arunachal Pradesh) have counts in the dozens
-  or low hundreds — several orders of magnitude apart.
+  states/UTs have counts in the dozens or low hundreds.
 - Even in "leading" states, EVs remain a tiny share of the total vehicle
   fleet — one state's electric vs. non-electric split showed under 0.5%
-  electrification against total registered vehicles, not just against other
-  EVs.
+  electrification against total registered vehicles.
 - **Data-quality finding:** two files with different filenames/session
-  numbers turned out to contain identical state-level totals — a reminder
-  that government open-data releases can duplicate/overlap, and blind
-  merging without a verification step would have silently doubled every
-  state's numbers.
-- Several category/type-code breakdowns have missing values (NaN) for some
-  states — likely representing zero vehicles in that category rather than
-  missing data, since the original wide tables just left those cells blank.
-  To be confirmed and converted during analysis, not assumed here.
+  numbers turned out to contain identical state-level totals — excluded one
+  to avoid double-counting.
 
 ## Theme 3: Charging Infrastructure
 
 - Charging stations are extremely concentrated in a handful of states —
-  Karnataka (5,765 EVPCS) and Maharashtra (3,728) dominate, while many
-  smaller states/UTs have single digits.
-- Delhi stands out for *operational* public charging stations specifically
-  (1,886+) even though it's not top of the EVPCS list — worth checking why
-  in analysis (different metric/date, or genuinely different infra type).
-- OMC (oil company)-funded stations are a much bigger number than FAME-II
-  subsidized ones in most states (e.g. Uttar Pradesh: 2,561 OMC-funded vs.
-  269 FAME-II installed) — suggests private/OMC investment is outpacing
-  government subsidy rollout.
-- FAME-I data mixes actual states with named highway corridors in the same
-  column — needs separating before any state-level comparison.
-- **Data-quality finding:** another duplicate file pair found here too — a
-  reminder that this dataset requires an explicit duplicate check per theme,
-  not a one-off fix.
+  Karnataka (5,765 EVPCS) and Maharashtra (3,728) dominate.
+- OMC (oil company)-funded stations outnumber FAME-II subsidized stations in
+  most states — suggests private/OMC investment is outpacing government
+  subsidy rollout.
+- **Data-quality finding:** another duplicate file pair found here too.
 
 ## Theme 4: Scheme Budget & Subsidy
 
-- Government funding for the EV scheme has scaled up dramatically over time
-  — allocation rose from ₹75 crore (2015-16) to ₹5,171.97 crore (2023-24), a
-  ~69x increase over 8 years.
-- Fund utilization consistently lags allocation, especially in newer years —
-  e.g. 2021-22 allocated ₹756.66 crore but an early snapshot shows only
-  ₹53.27 crore utilized, suggesting a rollout/implementation lag rather than
-  a funding shortage.
-- The same financial year's utilization figure changes across successive
-  Parliament questions (e.g. 2022-23 utilization reported as ₹1,128.45cr,
-  then ₹1,382.90cr, then ₹2,402.51cr in later files) — this reflects
-  utilization catching up over time, not inconsistent data. For any
-  full-period analysis, the most recent snapshot per financial year should
-  be used to avoid triple-counting.
+- Government funding for the EV scheme scaled up dramatically — allocation
+  rose from ₹75 crore (2015-16) to ₹5,171.97 crore (2023-24), a ~69x
+  increase over 8 years.
 - Subsidy uptake vs. targets shows a significant gap: only 792,529 of a
-  targeted 1,000,000 e-2-wheelers were actually supported (~79%), and the
-  gap is proportionally worse for e-3-wheelers (81,172 of 500,000 — ~16%)
-  and e-4-wheelers (6,831 of 55,000 — ~12%). **Two-wheelers are clearly the
-  segment where subsidy programs have been most effective.**
-- Charging energy requirement projections (2024-25 to 2029-30) show
-  aggressive expected growth — from 7,170 to 52,604 units, roughly 30-40%
-  YoY — a forward-looking signal of anticipated EV growth.
+  targeted 1,000,000 e-2-wheelers were actually supported (~79%), with much
+  worse shortfalls for e-3-wheelers (~16%) and e-4-wheelers (~12%).
 - **Data-quality finding:** another duplicate file pair found (same pattern
   as Theme 2).
 
 ## Theme 5: Sales by Vehicle Category
 
-- Domestic EV sales grew dramatically across 2020-21 to 2022-23, but growth
-  rates differ sharply by category:
-  - **Two-wheelers:** 41,000 → 231,000 → 728,027 (~18x over 2 years) — by
-    far the largest volume and fastest-growing segment.
-  - **Three-wheelers:** 88,000 → 178,000 → 402,106 (~4.6x) — strong, steady
-    growth.
-  - **Passenger vehicles (e-4W):** 5,000 → 19,000 → 47,581 (~9.5x) —
-    smallest absolute volume, though a comparable multiple of growth.
-- 2022→2023 YoY growth % is highest for Commercial Vehicles (114.16%) and
-  Passenger Vehicles (114.71%) — but this is misleading in isolation, since
-  both start from a much smaller base (2,649 and 38,240 units respectively)
-  than 2/3-wheelers. High % growth on a small base is a different story than
-  the sustained high-volume growth seen in 2/3-wheelers — worth stating both
-  the % and the absolute numbers together in the final report.
+- Domestic EV sales grew dramatically 2020-21 to 2022-23: two-wheelers
+  41,000 → 728,027 (~18x), three-wheelers 88,000 → 402,106 (~4.6x),
+  passenger vehicles 5,000 → 47,581 (~9.5x).
+- 2022→2023 YoY growth % was highest for Commercial and Passenger Vehicles
+  (114%+), but this is misleading in isolation since both start from a much
+  smaller base than 2/3-wheelers.
 
 ## Theme 6: Global Comparison
 
-- China dominates global EV market share throughout 2019-2023 but its
-  dominance is not steady — it dropped sharply from 93.2% (2019) to a low of
-  61.2% (2021), before recovering to 78.8% (2022) and settling at 68.2%
-  (2023). Overall it fell ~25 percentage points across the period even with
-  the 2022 rebound.
-- **Europe shows the clearest sustained growth trend** of any region —
-  rising from 2.9% (2019) to 18.8% (2023), roughly a 6.5x increase in
-  relative share, growing in every single year of the period.
-- USA's share stayed low and largely flat (1.0–2.4%) across all 5 years —
-  much slower relative EV market growth compared to Europe over this period.
-- **Takeaway:** the global EV market is diversifying away from being almost
-  entirely China-driven, with Europe the clearest beneficiary — useful
-  context for framing India's own EV growth against the global backdrop.
+- China dominates global EV market share throughout 2019-2023 but dropped
+  from 93.2% (2019) to 68.2% (2023) overall.
+- **Europe shows the clearest sustained growth trend** — rising from 2.9%
+  (2019) to 18.8% (2023), a ~6.5x increase.
+- USA's share stayed low and flat (1.0–2.4%) across all 5 years.
 
 ## Theme 7: Manufacturer-specific
 
-- E-Rickshaws dominate transport-category EV registrations by a wide margin
-  — 495,781 registered (E-Rickshaw Passenger) vs. the next largest transport
-  class, Motor Cycle/Scooter-Used For Hire, at just 4,468. This reinforces
-  the three-wheeler-led adoption pattern from Theme 1 — e-rickshaws
-  specifically, not three-wheelers broadly, appear to be the single biggest
-  driver.
-- Non-transport (personal use) EV registrations are led by M-Cycle/Scooter
-  (135,691) and Motor Car (15,700) — personal two-wheelers far outweigh
-  personal cars, consistent with slower passenger-car EV adoption seen
-  elsewhere in the data.
+- E-Rickshaws dominate transport-category EV registrations — 495,781
+  registered vs. the next largest transport class at just 4,468.
 - Transport-category registrations (550,491) are over 3x larger than
-  non-transport (169,969) — suggesting commercial/for-hire use is currently
-  a bigger driver of registered EVs than personal ownership.
-- Manufacturer procurement data (2 awards only) shows Tata Motors won a much
-  larger contract than Hyundai (₹43.62cr for 300 vehicles vs. ₹2.30cr for
-  10), but per-vehicle cost is actually comparable (~₹0.145cr vs. ~₹0.23cr
-  per vehicle). Sample size here is very small (2 rows), so this shouldn't
-  be treated as a broad manufacturer cost comparison.
+  non-transport (169,969) — commercial/for-hire use currently drives more
+  registered EVs than personal ownership.
 
-## Overall Synthesis
+# Part 2: Exploratory Analysis Insights, by Question
 
-Pulling the themes together, a few cross-cutting patterns emerge:
+## Q1: How has EV registration grown over time?
+
+- EV registrations grew steadily from 2014 (2,391) through 2019 (~165,000),
+  then show a sharp acceleration from 2021 onward across all sources.
+- **Data limitation identified:** calendar-year and fiscal-year reporting
+  don't align across sources. The fiscal-year series shows continuous growth
+  to 1.68M by 2023-24, while calendar-year series show a peak around 1.02M
+  in 2022 followed by an apparent drop to ~0.28M in 2023. This is very
+  likely a period-mismatch artifact (fiscal year spans Apr-Mar, calendar
+  year spans Jan-Dec) rather than a genuine adoption decline.
+- **Takeaway:** the *direction* of growth (strong, accelerating from 2021)
+  is consistent and reliable across sources. The *exact 2023 figure* is not
+  reliable without knowing each source's reporting period — this is
+  caveated in the final report rather than picking one number as "the" 2023
+  total.
+
+## Q2: Which vehicle categories are adopting EVs fastest?
+
+- **Three-wheelers are the dominant EV adopter by a wide margin** — EV share
+  rose from 14.4% (2018) to 52.4% (2023), with the steepest acceleration
+  between 2020 and 2021 (22.6% → 40.6%).
+- Two-wheelers and Four-wheelers show slow, steady growth reaching only
+  5.3% and ~2.1% respectively by 2023.
+- **Anomaly found:** Public Service Vehicles show a non-monotonic pattern —
+  EV share spiked to 7.6% in 2021 before declining to 4.3% (2022) and 2.1%
+  (2023), the only category that doesn't show steady growth. Flagged for
+  further investigation rather than over-interpreted, since it may reflect
+  a small-base effect.
+
+## Q3: Which states lead in EV adoption and charging infrastructure?
+
+- **Uttar Pradesh has the highest EV count by far** (574,967) — more than
+  double Maharashtra (305,006) — but ranks only 3rd in charging
+  infrastructure (1,989 EVPCS), well behind Karnataka (5,765) despite having
+  over double Karnataka's EV count.
+- **Karnataka leads in charging infrastructure** (5,765 EVPCS) despite a
+  smaller EV fleet (248,747) than both Uttar Pradesh and Maharashtra —
+  suggesting infrastructure investment there is ahead of, or independent
+  from, current EV demand.
+- Across all 34 matched states, there is a rough positive relationship
+  between EV count and charging stations, but Uttar Pradesh sits as a clear
+  outlier below the trend, while Karnataka and Maharashtra sit above it.
+- **Takeaway:** charging infrastructure rollout isn't purely demand-driven —
+  some states appear to be building ahead of adoption, while Uttar Pradesh
+  may be seeing EV adoption outpace available charging supply, a potential
+  bottleneck worth flagging.
+
+## Q4: Is government subsidy funding keeping pace with targets?
+
+- From 2015-16 through 2021-22, budget allocation and fund utilization
+  track almost exactly — essentially full utilization every year.
+- **The pattern breaks sharply starting 2022-23.** Allocation jumps
+  dramatically, but utilization does not keep pace:
+  - 2022-23: ~83% utilized (₹2,402.51cr of ₹2,897.84cr)
+  - 2023-24: ~38% utilized (₹1,980.83cr of ₹5,171.97cr) — the lowest
+    utilization rate of any year, despite being the largest allocation by
+    far.
+- **Vehicle-level target achievement confirms the gap, and varies sharply by
+  category:**
+  - e-2W: 79.3% of target achieved (792,529 of 1,000,000)
+  - e-3W: 16.2% (81,172 of 500,000)
+  - e-4W: 12.4% (6,831 of 55,000)
+  - e-Buses: 34.3% (2,435 of 7,090)
+- Despite three-wheelers showing the strongest *organic adoption* growth
+  (Q2), the *subsidy scheme* specifically aimed at 3-wheelers has badly
+  underperformed its target — suggesting 3-wheeler growth is happening more
+  through market forces than through this particular subsidy program.
+- **Takeaway:** funding has been allocated generously, but converting that
+  funding into actual vehicles on the road (beyond 2-wheelers) has been the
+  harder, less successful part of scheme execution.
+
+## Q5: How does India's growth compare to global trends?
+
+*In progress.*
+
+# Overall Synthesis
+
+Pulling cleaning and analysis findings together, a few cross-cutting patterns
+emerge:
 
 1. **India's EV story is a three-wheeler (specifically e-rickshaw) story
-   first**, not a passenger-car story — this shows up consistently in
-   Registration Trends, Sales by Category, and Manufacturer-specific data.
-2. **Growth is real but highly concentrated** — geographically (a handful of
-   states), by vehicle category (2W/3W over 4W), and by use-case (commercial/
-   transport over personal).
+   first**, not a passenger-car story — consistent across Registration
+   Trends, Sales by Category, and Manufacturer-specific data.
+2. **Growth is real but highly concentrated** — geographically, by vehicle
+   category, and by use-case (commercial/transport over personal).
 3. **Government scheme funding has scaled up faster than utilization or
-   uptake** — budget allocation has grown ~69x since 2015-16, but actual
-   subsidy uptake for the harder categories (3W, 4W) lags well behind
-   targets, while 2W uptake has been comparatively strong.
-4. **India's growth mirrors a global trend** of diversification away from a
+   uptake** — budget allocation has grown ~69x since 2015-16, but both the
+   utilization rate and vehicle-target achievement have declined in the most
+   recent years for every category except two-wheelers.
+4. **Infrastructure and demand are not always aligned** — the state with the
+   most EVs is not the state with the most charging stations, suggesting
+   regional bottlenecks or uneven investment strategies.
+5. **India's growth mirrors a global trend** of diversification away from a
    single dominant market (China), suggesting India is part of a broader
    global shift rather than an isolated case.
 
+## Next Steps
+
+1. Dashboard construction
+2. Final written report combining these insights into a cohesive narrative
