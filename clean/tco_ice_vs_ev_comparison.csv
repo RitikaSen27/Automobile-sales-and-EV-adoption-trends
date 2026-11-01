@@ -1,0 +1,7 @@
+vehicle_segment,use_case,powertrain,model_benchmark,purchase_price_inr,daily_km,annual_km,efficiency,energy_rate_inr,running_cost_per_km_inr,annual_energy_cost_inr,annual_maintenance_inr,tco_3yr_inr,tco_5yr_inr,payback_months,ev_net_savings_3yr_inr,ev_net_savings_5yr_inr
+Two Wheeler (2W),Personal Commute,ICE (Petrol),Honda Activa 125,90000,25,9125,45 km/L,100.0,2.22,20258,3500,161274,208790,,0,0
+Two Wheeler (2W),Personal Commute,EV (Battery Electric),Ola S1 / Ather 450X,125000,25,9125,30 Wh/km,7.5,0.25,2281,1200,135443,142405,20.7,25831,66385
+Three Wheeler (3W),Commercial Passenger / Auto,ICE (CNG),Bajaj Compact RE CNG,240000,110,40150,25 km/kg,85.0,3.4,136510,16000,697530,1002550,,0,0
+Three Wheeler (3W),Commercial Passenger / Auto,EV (Battery Electric / E-Auto),Mahindra Treo / E-Rickshaw,280000,110,40150,55 Wh/km,7.5,0.41,16462,6000,347386,392310,3.7,350144,610240
+Four Wheeler (4W),Personal Passenger Car,ICE (Petrol),Tata Nexon Petrol,1150000,33,12045,15 km/L,100.0,6.67,80340,10000,1421020,1601700,,0,0
+Four Wheeler (4W),Personal Passenger Car,EV (Battery Electric),Tata Nexon EV,1600000,33,12045,140 Wh/km,8.0,1.12,13490,4500,1653970,1689950,74.6,-232950,-88250

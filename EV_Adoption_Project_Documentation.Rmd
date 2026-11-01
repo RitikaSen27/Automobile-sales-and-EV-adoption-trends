@@ -230,6 +230,24 @@ Logistic S-Curve (Bass Diffusion) models calibrated against historical 2018–20
 - **Two-Wheelers (2W):** Projected to surge from 5.6% (2023) to 29.4% (2026) and reach **71.8% by 2030**, approaching the 80% target with a narrow 8% gap.
 - **Four-Wheelers (4W):** Projected to reach 14.1% by 2026 and **28.8% by 2030**, hitting right on track with NITI Aayog's 30% private car ambition as sub-₹12 lakh models arrive.
 
+## Q11: Total Cost of Ownership (TCO) Parity — Why did 3W explode while 4W stalled?
+
+- **Commercial 3W Payback in 3.7 Months:** High daily operating distance (100–120 km/day) combined with massive fuel arbitrage (₹0.41/km electric vs. ₹3.40/km CNG) yields >₹1.30 lakh in annual operational savings. The modest ₹40,000 upfront EV premium is recovered in under 120 days, delivering over ₹3.50 lakh in net savings over a 3-year operating period.
+- **Commuter 2W Payback in 20.7 Months:** Personal daily commuting (~25 km/day) achieves breakeven in under 2 years, well within typical ownership turnover, supporting steady retail adoption.
+- **Personal 4W Payback Barrier at 74.6 Months (6.2 Years):** Personal passenger cars run ~30–35 km/day, but face a massive ₹4.50 lakh upfront battery premium over equivalent petrol cars. At personal mileage levels, payback takes over 6 years. Because average car buyers sell or upgrade within 5–6 years, **the personal buyer never breaks even**, explaining why passenger car EV adoption remains stuck under 2%.
+
+## Q12: Policy Friction & Capital Efficiency — What caused the 2023–24 budget utilization drop?
+
+- **The 38.3% Fund Utilization Collapse in FY24:** Despite the largest-ever annual budget allocation of ₹5,171.97 Cr in 2023-24, fund utilization dropped to an all-time low of 38.3%, leaving over ₹3,191 Cr unutilized.
+- **The Three Structural Catalysts:**
+  1. *Phased Manufacturing Programme (PMP) Audits:* In 2022–2023, government audits found leading e-2W OEMs importing powertrain parts from China while claiming domestic subsidies. The government froze claim disbursements and initiated ₹500+ Cr in recovery notices, paralyzing claims for months.
+  2. *June 2023 Subsidy Slash:* 2W subsidies were abruptly cut from ₹15,000/kWh to ₹10,000/kWh, and the maximum cap dropped from 40% to 15% of ex-factory price, causing an overnight price jump of ₹25,000–₹35,000 per scooter and dampening retail volume.
+  3. *Scheme Transition Uncertainty:* Approaching the March 31, 2024 expiration of FAME-II, OEMs slowed expansion plans until transitional schemes (EMPS / PM E-DRIVE) were clarified.
+- **Capital Intensity Disparities Across Vehicle Classes:**
+  - **e-2W is Highly Capital-Efficient:** Disbursed ₹31,094 per vehicle, reaching 79.3% of its target (792,529 units).
+  - **e-4W Absorbed High Capital with Low Impact:** Absorbed ₹167,838 per vehicle (~₹1.68 lakh subsidy per car), yet achieved only 12.4% of its target (6,831 units).
+  - **e-Buses Are Ultra-Capital-Intensive:** Required ₹28.25 lakh per bus; 1 e-bus consumes the public subsidy budget of ~90 electric 2-wheelers.
+
 # Part 3: Actionable Strategic Recommendations
 
 ### 1. For Automobile OEMs
