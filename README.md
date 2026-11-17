@@ -33,6 +33,7 @@ This project studies India's EV adoption journey end-to-end:
 │   └── ... (25 theme tables)
 ├── ev_cleaning.ipynb                            # Data audit, cleaning & consolidation notebook (Python)
 ├── ev_analysis.ipynb                            # Comprehensive analytics, predictive modeling & strategy notebook (Python)
+├── app.py                                       # Interactive Streamlit analytics dashboard & simulator (Python)
 ├── EV_Adoption_Project_Documentation.Rmd        # Detailed analytical report and insights summary (R Markdown)
 └── README.md
 ```
@@ -98,3 +99,25 @@ Tailored strategic playbooks for:
 3. **The Infrastructure-Demand Disconnect:** Public chargers are concentrated in wealthy tech hubs (Karnataka has 5,765 chargers for ~248k EVs), while the largest EV fleets operate in severe charger deserts (Uttar Pradesh has ~575k EVs but only 1,989 chargers).
 4. **The Wealth Paradox:** State GSDP per capita does not predict EV fleet penetration ($r = -0.010$). Electric mobility in India is an economic equalizer driven by commercial utility rather than high-income luxury adoption.
 5. **Subsidy Efficacy:** FAME-II's 2023-24 budget utilization collapsed to 38.3% due to localized component audit freezes and subsidy reductions, proving that regulatory stability and credit guarantees are more effective than upfront purchase hand-outs.
+
+## Interactive Streamlit Dashboard (`app.py`)
+
+The repository includes a production-grade, interactive web application built with **Streamlit** and **Plotly**.
+
+### How to Run Locally:
+```bash
+# Ensure dependencies are installed
+pip install streamlit plotly pandas numpy scipy scikit-learn
+
+# Launch the Streamlit dashboard
+streamlit run app.py
+```
+
+### Dashboard Modules:
+1. **📊 Executive Dashboard & Trends:** Real-time KPI summaries, YoY registration acceleration curves, category adoption dynamics, and global market comparisons.
+2. **🗺️ State Analytics & Archetypes:** Interactive rankings by volume vs. penetration % vs. per-capita density; K-Means scatter plot with cluster archetypes; and horizontal CIAR deficit charts against the IEA 10:1 benchmark.
+3. **🥊 State Benchmarking Tool:** Interactive head-to-head state selector (e.g., UP vs. Karnataka, Bihar vs. Maharashtra) with side-by-side metric cards, diff indicators, and grouped comparative dimension charts.
+4. **💰 Interactive TCO Simulator:** Dynamic breakeven calculator allowing users to adjust daily mileage, fuel prices, and electricity tariffs with live cumulative cost crossover charts.
+5. **🏛️ Subsidy Efficacy & Capital Efficiency:** Dual-axis fiscal timeline with policy shock callouts and category-level subsidy spend per vehicle deployed.
+6. **🔮 2030 Adoption S-Curve Forecasting:** Bass diffusion projection trajectories through 2030 benchmarked against NITI Aayog's 80% and 30% targets.
+7. **🎯 Strategic Stakeholder Playbooks:** Executive advisory playbooks for OEMs, CPOs, and Policymakers.
