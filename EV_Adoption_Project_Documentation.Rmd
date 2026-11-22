@@ -23,10 +23,26 @@ consolidation) and `ev_analysis.ipynb` (exploratory data analysis and
 visualization). This document focuses on **what the data actually shows**, rather
 than the code itself.
 
+The project also includes an interactive **Streamlit dashboard** (`app.py`) that
+presents the results of the analysis, so the findings can be explored rather than
+only read. Part 4 below documents it.
+
 The 40 raw files were grouped into 7 themes and consolidated into 25 master
-tables. Part 1 below covers insights found during cleaning, theme by theme. Part 2
-covers insights found during exploratory analysis, structured question by
-question.
+tables. The analysis notebook then added four analytical tables (state-level
+enrichment, 2030 projections, cost-of-ownership comparison and subsidy
+efficiency), so the `clean/` folder holds 29 CSV files in total.
+
+How this document is organised:
+
+- **Part 1** covers insights found during cleaning, theme by theme.
+- **Part 2** covers insights found during exploratory analysis, question by question.
+- **Part 3** turns the findings into recommendations for vehicle makers, charging
+  operators and policymakers.
+- **Part 4** documents the interactive dashboard: what each section shows, how it
+  works, how to run it and how to publish it.
+- **Part 5** lists the limitations of the data and methods.
+- **Part 6** describes the repository layout, how to reproduce the work, and what
+  could be added next.
 
 # Part 1: Cleaning Insights, by Theme
 
@@ -263,3 +279,214 @@ Logistic S-Curve (Bass Diffusion) models calibrated against historical 2018–20
 - **PM E-DRIVE Subsidy Reform:** Shift from direct purchase capex subsidies to first-loss credit guarantees (FLCG) and interest subvention via SIDBI to resolve the budget utilization bottlenecks seen in FAME-II (38% utilization in FY24).
 - **Mandate State CIAR Caps:** Tie federal highway and municipal infrastructure grants to state CIAR thresholds (<25 EVs per public charger).
 - **Finalize National Battery Swapping Standards:** Standardize battery pack dimensions and communication protocols to eliminate vendor lock-in and enable interoperability.
+
+# Part 4: Interactive Dashboard (Streamlit)
+
+## Purpose
+
+The notebooks answer twelve questions, but a reader has to scroll through code and
+charts to follow them. The dashboard (`app.py`) puts the same results in one web
+page with a menu, so someone can jump straight to the topic they care about and try
+the cost calculator and state comparison themselves.
+
+**Live app:** _add your Streamlit link here after deploying_
+
+## Tools used
+
+| Tool | Used for |
+|---|---|
+| Streamlit | The web app: page layout, menu, sliders, dropdowns |
+| pandas, NumPy | Loading the cleaned CSVs and the cost calculations |
+| Plotly (Express and Graph Objects) | Interactive charts with hover |
+| GitHub + Streamlit Community Cloud | Hosting the code and publishing the app |
+
+## How it works
+
+- The app reads every CSV in the `clean/` folder once at start-up into a dictionary
+  of data frames (cached, so it is not reloaded on every click).
+- A menu in the sidebar chooses which of the seven sections is shown.
+- Each section picks the tables it needs by name. If a table is missing, that
+  section shows nothing instead of crashing.
+- Nothing is recomputed from the raw files. The dashboard only displays what the
+  cleaning and analysis notebooks already produced, apart from the cost calculator,
+  which calculates live.
+
+## The seven sections
+
+### 1. Executive dashboard and trends
+- Five headline cards: total registered EVs (1.68 million+), three-wheeler EV
+  share (52.4%), public chargers (12,146), three-wheeler payback (3.7 months) and
+  the projected 2030 three-wheeler share (88.2%).
+- A line chart of the electric share of each vehicle type from 2018 to 2023
+  (`ev_registration_by_category`).
+- A stacked bar chart of the global EV market by region, 2019 to 2023
+  (`global_ev_share`).
+- A short written summary of the main points (Q1, Q2 and Q5 of Part 2).
+
+### 2. State analytics and archetypes
+- A dropdown ranks the top 15 states by EV share of the fleet, number of EVs, EVs
+  per 100,000 people, EVs per public charger (CIAR) or number of chargers. Bars are
+  coloured by cluster.
+- A bubble chart of EV share against chargers per 100,000 people, sized by number of
+  EVs and coloured by the four K-Means archetypes (Q9).
+- A bar chart of CIAR for states with at least 500 EVs, on a log scale, with
+  reference lines at 10 (the IEA guide), 50 (strain) and 150 (acute shortage) (Q7).
+
+### 3. State benchmarking tool
+- Two dropdowns choose any two states or union territories (the defaults are Uttar
+  Pradesh and Karnataka).
+- Six figures are shown for the chosen state: EVs, EV share of vehicles, public
+  chargers, CIAR, three-wheeler share and income per person.
+- A grouped bar chart compares five measures: EV share, chargers per 100,000
+  people, and the 2W, 3W and 4W shares of the EV fleet.
+- A written summary names each state's archetype and the number of chargers needed
+  to reach the IEA's 10 EVs per charger.
+
+### 4. Interactive TCO simulator
+The user picks a vehicle (commercial three-wheeler, personal two-wheeler or personal
+car) and moves four sliders: distance per day, fuel price, electricity tariff and
+the extra purchase price of the EV. The app then shows the running cost per km for
+each, the payback period in months, the savings after three years, and a chart of
+cumulative cost over 60 months where the two lines cross at break-even.
+
+The calculation is:
+
+- Petrol or CNG cost per km = fuel price ÷ km per litre (or per kg)
+- EV cost per km = (Wh per km ÷ 1000) × electricity tariff
+- Yearly saving = (petrol cost − EV cost per km) × yearly km + maintenance saving
+- Payback (months) = extra EV price ÷ yearly saving × 12
+
+Starting assumptions for each vehicle:
+
+| | 3W (CNG auto) | 2W (scooter) | 4W (car) |
+|---|---|---|---|
+| Distance per day | 110 km | 25 km | 33 km |
+| Petrol/CNG vehicle price | ₹2.4 lakh | ₹90,000 | ₹11.5 lakh |
+| EV price | ₹2.8 lakh | ₹1.25 lakh | ₹16 lakh |
+| Fuel price | ₹85 per kg | ₹100 per litre | ₹100 per litre |
+| Fuel efficiency | 25 km per kg | 45 km per litre | 15 km per litre |
+| EV energy use | 55 Wh per km | 30 Wh per km | 140 Wh per km |
+| Maintenance per year (petrol / EV) | ₹16,000 / ₹6,000 | ₹3,500 / ₹1,200 | ₹10,000 / ₹4,500 |
+
+These are typical assumptions, not measured data, which is why the inputs are
+sliders.
+
+### 5. Subsidy efficacy and capital efficiency
+- Bars of FAME budget and funds spent for each year, with a line for the share
+  spent, showing the fall to 38% in 2023-24 (Q4 and Q12).
+- A bar chart of subsidy per vehicle against the share of the target reached for
+  each vehicle type, built by joining `scheme_vehicle_targets` with
+  `scheme_subsidy_amount`.
+- A written explanation of the three causes: the manufacturing audits, the June
+  2023 subsidy cut and the uncertainty about the scheme ending.
+
+### 6. 2030 adoption forecast
+- The fitted S-curves for three-wheelers, two-wheelers and cars from 2018 to 2030,
+  drawn against NITI Aayog's targets of 80% (2W and 3W) and 30% (cars).
+- Three summary boxes: three-wheelers reach about 88% (ahead of target),
+  two-wheelers about 72% (a gap of about 8 points) and cars about 29% (close to the
+  target).
+
+### 7. Strategic playbooks
+Three tabs of recommendations for vehicle makers, charging operators and
+policymakers, matching Part 3 of this document.
+
+## Running the dashboard on your own computer
+
+Install the packages once:
+
+```
+pip install streamlit pandas numpy plotly
+```
+
+Then, from the folder that contains `app.py` and the `clean/` folder:
+
+```
+streamlit run app.py
+```
+
+The app opens in the browser at `http://localhost:8501`. The command must be run
+from the project folder, because the app finds the data through the relative path
+`clean/`.
+
+## Publishing the dashboard
+
+The app can be published for free on Streamlit Community Cloud, which runs it
+directly from the GitHub repository.
+
+1. Add a `requirements.txt` file next to `app.py` containing four lines:
+   `streamlit`, `pandas`, `numpy` and `plotly`. The notebooks use more packages
+   (such as scikit-learn), but the dashboard does not, because the clustering and
+   forecasts were already saved to CSV.
+2. Check that the repository is public and that the `clean/` folder and its CSV
+   files are committed (a `.gitignore` rule for `*.csv` would leave the data out).
+3. Sign in at share.streamlit.io with GitHub, choose **Create app**, select the
+   repository and the `main` branch, set the main file to `app.py` and deploy.
+4. The app gets a public link. After that, every `git push` updates the live app
+   within a minute or two.
+
+If the deployment fails, the usual causes are a package missing from
+`requirements.txt` (a `ModuleNotFoundError`) or a data file missing from the
+repository (a `FileNotFoundError`).
+
+# Part 5: Limitations
+
+- **The state data is a single snapshot.** The state table has one row per state, so
+  the state sections compare states at one moment. They do not show how a state
+  changed over time. Year-by-year figures exist only at national level.
+- **The 2030 forecast rests on very little data.** The S-curves are fitted to about
+  six yearly points (2018 to 2023), and small changes in those points change the
+  result a lot. They should be read as a scenario, not a prediction.
+- **The cost-of-ownership numbers are assumptions.** Prices, daily distance, fuel
+  efficiency and maintenance costs are typical values, not measured data, so the
+  payback periods are illustrations of why adoption differs between vehicle types.
+- **Correlation is not cause.** The link between income and EV share (r = −0.010)
+  and between income and charger density (r = +0.605) is based on 34 states and
+  does not show what causes what.
+- **Reporting periods differ.** Calendar-year and financial-year series cannot be
+  combined directly, which is why the apparent 2023 drop in registrations is not
+  treated as real. Utilisation figures for a year also rise across successive
+  parliamentary answers, so the most recent year may be understated.
+- **Some headline figures in the dashboard are typed in.** The five cards at the top
+  of the dashboard, and the written insight text, are copied from the analysis
+  results instead of being calculated from the CSVs. If the data changes, they must
+  be updated by hand.
+- **India is not a separate region** in the global comparison data. It is included
+  in the "Others" group.
+
+# Part 6: Repository Layout, Reproducing the Work and Next Steps
+
+## Repository layout
+
+| Path | What it is |
+|---|---|
+| `datasets/` | The 40 raw CSVs from Rajya Sabha records |
+| `ev_cleaning.ipynb` | Audits, cleans and consolidates the raw files |
+| `clean/` | The 29 cleaned and enriched tables |
+| `ev_analysis.ipynb` | The twelve analysis questions, models and recommendations |
+| `app.py` | The Streamlit dashboard |
+| `requirements.txt` | Packages the dashboard needs |
+| `EV_Adoption_Project_Documentation.Rmd` | This document |
+| `README.md` | Short project summary |
+
+## Reproducing the work
+
+1. Run `ev_cleaning.ipynb` to turn the raw files in `datasets/` into the cleaned
+   tables in `clean/`.
+2. Run `ev_analysis.ipynb` to produce the analysis and the four analytical tables
+   (state enrichment, projections, cost of ownership and subsidy efficiency).
+3. Run `streamlit run app.py` to explore the results.
+
+## What has been completed
+
+- Collected and audited 40 parliamentary datasets, removed duplicates and grouped
+  them into themes.
+- Built 29 clean tables, including state-level enrichment with population and
+  income.
+- Answered twelve questions on trends, states, charging, income, subsidies, cost of
+  ownership and the 2030 outlook.
+- Grouped the states into four archetypes with K-Means and fitted S-curves for
+  2030.
+- Wrote recommendations for vehicle makers, charging operators and policymakers.
+- Built a seven-section interactive dashboard and prepared it for public
+  deployment.
