@@ -3,10 +3,11 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
+import plotly.io as pio
 import os
 
 # ---------------------------------------------------------
-# Page Configuration & Styling
+# Page Configuration
 # ---------------------------------------------------------
 st.set_page_config(
     page_title="India EV Adoption & Sales Analytics",
@@ -15,48 +16,207 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for polished aesthetics
+# ---------------------------------------------------------
+# Design tokens (mint / glass look)
+# ---------------------------------------------------------
+GREEN = "#22C55E"
+TEAL = "#14B8A6"
+SKY = "#0EA5E9"
+AMBER = "#F59E0B"
+VIOLET = "#8B5CF6"
+RED = "#EF4444"
+INK = "#0F172A"
+MUTED = "#64748B"
+PALETTE = [GREEN, SKY, AMBER, VIOLET, TEAL, RED]
+
+# Plotly: transparent background, soft grid, one consistent palette
+pio.templates["ev_mint"] = go.layout.Template(
+    layout=dict(
+        colorway=PALETTE,
+        font=dict(family="Plus Jakarta Sans, Inter, sans-serif", color=INK, size=13),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        title=dict(font=dict(size=17, color=INK), x=0.02, xanchor="left"),
+        xaxis=dict(gridcolor="rgba(15,23,42,0.07)", zerolinecolor="rgba(15,23,42,0.1)", linecolor="rgba(15,23,42,0.12)"),
+        yaxis=dict(gridcolor="rgba(15,23,42,0.07)", zerolinecolor="rgba(15,23,42,0.1)", linecolor="rgba(15,23,42,0.12)"),
+        hoverlabel=dict(bgcolor="white", font_size=13, font_color=INK),
+    )
+)
+pio.templates.default = "ev_mint"
+
+
+def show(fig, container=st):
+    """Render a Plotly chart with consistent spacing and a legend that never overlaps the axis."""
+    fig.update_layout(
+        margin=dict(l=20, r=20, t=60, b=20),
+        legend=dict(orientation="h", yanchor="top", y=-0.22, xanchor="center", x=0.5, title_text=""),
+    )
+    container.plotly_chart(fig, use_container_width=True)
+
+
+# ---------------------------------------------------------
+# Global CSS
+# ---------------------------------------------------------
 st.markdown("""
 <style>
-    .main-title {
-        font-size: 2.2rem;
-        font-weight: 800;
-        color: #1E3A8A;
-        margin-bottom: 0.2rem;
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+    html, body, [class*="css"], .stApp, .stMarkdown, button, input, select, textarea {
+        font-family: 'Plus Jakarta Sans', 'Inter', sans-serif !important;
     }
-    .sub-title {
-        font-size: 1.05rem;
-        color: #4B5563;
-        margin-bottom: 1.5rem;
+
+    /* Page background: soft mint gradient */
+    .stApp {
+        background:
+            radial-gradient(1200px 500px at 85% -10%, rgba(45,212,191,0.22), transparent 60%),
+            radial-gradient(900px 500px at -5% 20%, rgba(34,197,94,0.14), transparent 60%),
+            linear-gradient(135deg, #E9F5F2 0%, #DCEEEC 55%, #EAF4F2 100%);
+        color: #0F172A;
     }
+    header[data-testid="stHeader"] { background: transparent; }
+    .block-container { padding-top: 2.2rem; max-width: 1280px; }
+
+    /* Headings */
+    h1, h2, h3 { color: #0F172A !important; letter-spacing: -0.02em; }
+    h2 { font-weight: 800 !important; font-size: 1.9rem !important; }
+    h3 { font-weight: 700 !important; }
+    p, li { color: #334155; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+        position: relative;
+        background: linear-gradient(135deg, rgba(255,255,255,0.92), rgba(255,255,255,0.6));
+        border: 1px solid rgba(255,255,255,0.9);
+        border-radius: 28px;
+        padding: 30px 34px;
+        box-shadow: 0 18px 50px rgba(15,118,110,0.12);
+        overflow: hidden;
+        margin-bottom: 22px;
+    }
+    .hero::after {
+        content: "";
+        position: absolute; right: -60px; top: -60px;
+        width: 260px; height: 260px; border-radius: 50%;
+        background: radial-gradient(circle, rgba(45,212,191,0.45), rgba(74,222,128,0.0) 70%);
+    }
+    .hero-eyebrow {
+        display: inline-block;
+        background: rgba(34,197,94,0.12); color: #15803D;
+        font-weight: 700; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase;
+        padding: 5px 12px; border-radius: 999px; margin-bottom: 12px;
+    }
+    .hero-title {
+        font-size: 2.7rem; line-height: 1.08; font-weight: 800; color: #0F172A;
+        letter-spacing: -0.03em; margin: 0 0 10px 0; max-width: 760px;
+    }
+    .hero-sub { font-size: 1.02rem; color: #475569; max-width: 720px; margin: 0; }
+    .hero-pills { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; position: relative; z-index: 1; }
+    .hero-pill {
+        background: linear-gradient(90deg, #2DD4BF, #4ADE80); color: #052e16;
+        font-weight: 700; font-size: 0.82rem; padding: 8px 16px; border-radius: 999px;
+        box-shadow: 0 6px 16px rgba(34,197,94,0.28);
+    }
+    .hero-pill.ghost { background: rgba(255,255,255,0.8); color: #0F172A; box-shadow: none; border: 1px solid rgba(15,23,42,0.08); }
+
+    /* ---------- KPI cards ---------- */
     .metric-card {
-        background: linear-gradient(135deg, #F9FAFB 0%, #F3F4F6 100%);
-        border: 1px solid #E5E7EB;
-        border-radius: 10px;
-        padding: 16px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        background: rgba(255,255,255,0.82);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.95);
+        border-radius: 22px;
+        padding: 18px 18px 16px 18px;
+        box-shadow: 0 10px 30px rgba(15,23,42,0.07);
+        height: 100%;
     }
-    .metric-val {
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: #111827;
+    .metric-icon {
+        width: 38px; height: 38px; border-radius: 12px;
+        background: linear-gradient(135deg, #CCFBF1, #BBF7D0);
+        display: flex; align-items: center; justify-content: center; font-size: 1.15rem;
+        margin-bottom: 12px;
     }
-    .metric-lbl {
-        font-size: 0.85rem;
-        color: #6B7280;
-        text-transform: uppercase;
-        font-weight: 600;
-        margin-bottom: 4px;
+    .metric-lbl { font-size: 0.72rem; color: #64748B; text-transform: uppercase; font-weight: 700; letter-spacing: 0.06em; margin-bottom: 2px; }
+    .metric-val { font-size: 1.9rem; font-weight: 800; color: #0F172A; letter-spacing: -0.02em; line-height: 1.15; }
+    .metric-delta { font-size: 0.8rem; font-weight: 600; color: #15803D; margin-top: 4px; }
+    .metric-bar { height: 8px; border-radius: 999px; background: rgba(15,23,42,0.08); margin-top: 12px; overflow: hidden; }
+    .metric-bar > span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #2DD4BF, #4ADE80); }
+
+    /* Archetype tags (kept for compatibility) */
+    .tag-pioneer { background-color: #DBEAFE; color: #1E40AF; padding: 2px 8px; border-radius: 6px; font-weight: 600; font-size: 0.75rem; }
+    .tag-deficit { background-color: #FEE2E2; color: #991B1B; padding: 2px 8px; border-radius: 6px; font-weight: 600; font-size: 0.75rem; }
+    .tag-trans { background-color: #FEF3C7; color: #92400E; padding: 2px 8px; border-radius: 6px; font-weight: 600; font-size: 0.75rem; }
+    .tag-industrial { background-color: #D1FAE5; color: #065F46; padding: 2px 8px; border-radius: 6px; font-weight: 600; font-size: 0.75rem; }
+
+    /* ---------- Sidebar ---------- */
+    section[data-testid="stSidebar"] {
+        background: linear-gradient(180deg, rgba(255,255,255,0.78), rgba(236,253,245,0.7));
+        backdrop-filter: blur(14px);
+        border-right: 1px solid rgba(255,255,255,0.9);
     }
-    .metric-delta {
-        font-size: 0.82rem;
-        font-weight: 600;
-        color: #059669;
+    section[data-testid="stSidebar"] > div { padding-top: 1.2rem; }
+    .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+    .brand-logo {
+        width: 44px; height: 44px; border-radius: 14px; font-size: 1.4rem;
+        background: linear-gradient(135deg, #2DD4BF, #4ADE80);
+        display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 8px 18px rgba(34,197,94,0.35);
     }
-    .tag-pioneer { background-color: #DBEAFE; color: #1E40AF; padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 0.75rem; }
-    .tag-deficit { background-color: #FEE2E2; color: #991B1B; padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 0.75rem; }
-    .tag-trans { background-color: #FEF3C7; color: #92400E; padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 0.75rem; }
-    .tag-industrial { background-color: #D1FAE5; color: #065F46; padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 0.75rem; }
+    .brand-name { font-weight: 800; font-size: 1.15rem; color: #0F172A; line-height: 1.1; }
+    .brand-sub { font-size: 0.74rem; color: #64748B; font-weight: 600; }
+
+    /* Navigation radio -> pill buttons */
+    section[data-testid="stSidebar"] div[role="radiogroup"] { gap: 8px; }
+    section[data-testid="stSidebar"] div[role="radiogroup"] > label {
+        background: rgba(255,255,255,0.75);
+        border: 1px solid rgba(15,23,42,0.06);
+        border-radius: 16px;
+        padding: 11px 14px;
+        width: 100%;
+        transition: all .15s ease;
+        box-shadow: 0 2px 6px rgba(15,23,42,0.04);
+    }
+    section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover { transform: translateX(2px); border-color: rgba(34,197,94,0.5); }
+    section[data-testid="stSidebar"] div[role="radiogroup"] > label > div:first-child { display: none; }
+    section[data-testid="stSidebar"] div[role="radiogroup"] > label p { font-weight: 600; font-size: 0.9rem; color: #0F172A; margin: 0; }
+    section[data-testid="stSidebar"] div[role="radiogroup"] > label:has(input:checked) {
+        background: linear-gradient(90deg, #2DD4BF, #4ADE80);
+        border-color: transparent;
+        box-shadow: 0 8px 20px rgba(34,197,94,0.32);
+    }
+    section[data-testid="stSidebar"] div[role="radiogroup"] > label:has(input:checked) p { color: #052e16; font-weight: 800; }
+    section[data-testid="stSidebar"] [data-testid="stAlert"] { border-radius: 16px; }
+
+    /* ---------- Chart containers ---------- */
+    div[data-testid="stPlotlyChart"] {
+        background: rgba(255,255,255,0.82);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.95);
+        border-radius: 24px;
+        padding: 10px 8px 4px 8px;
+        box-shadow: 0 10px 30px rgba(15,23,42,0.07);
+    }
+
+    /* ---------- Native st.metric as cards ---------- */
+    div[data-testid="stMetric"] {
+        background: rgba(255,255,255,0.85);
+        border: 1px solid rgba(255,255,255,0.95);
+        border-radius: 18px;
+        padding: 14px 16px;
+        box-shadow: 0 8px 22px rgba(15,23,42,0.06);
+    }
+    div[data-testid="stMetricLabel"] p { font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #64748B; }
+    div[data-testid="stMetricValue"] { font-weight: 800; color: #0F172A; }
+
+    /* ---------- Inputs ---------- */
+    div[data-baseweb="select"] > div { border-radius: 14px !important; background: rgba(255,255,255,0.9) !important; border-color: rgba(15,23,42,0.08) !important; }
+    div[data-testid="stSlider"] [role="slider"] { background: #22C55E !important; box-shadow: 0 0 0 4px rgba(34,197,94,0.2) !important; }
+    button[role="tab"] { font-weight: 700; border-radius: 12px 12px 0 0; }
+    button[role="tab"][aria-selected="true"] { color: #15803D; }
+    div[data-baseweb="tab-highlight"] { background-color: #22C55E !important; }
+
+    /* ---------- Alerts / info boxes ---------- */
+    div[data-testid="stAlert"] { border-radius: 18px; border: 1px solid rgba(255,255,255,0.9); box-shadow: 0 8px 22px rgba(15,23,42,0.05); }
+
+    hr { border-color: rgba(15,23,42,0.08) !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -78,8 +238,12 @@ tables = load_all_data()
 # ---------------------------------------------------------
 # Sidebar Navigation
 # ---------------------------------------------------------
-st.sidebar.image("https://img.icons8.com/fluency/96/electric-vehicle.png", width=64)
-st.sidebar.title("Navigation")
+st.sidebar.markdown(
+    '<div class="brand"><div class="brand-logo">⚡</div>'
+    '<div><div class="brand-name">EV India</div><div class="brand-sub">Adoption Analytics</div></div></div>',
+    unsafe_allow_html=True,
+)
+st.sidebar.markdown("<br>", unsafe_allow_html=True)
 
 menu_choice = st.sidebar.radio(
     "Select Analysis Module:",
@@ -91,7 +255,8 @@ menu_choice = st.sidebar.radio(
         "🏛️ Subsidy Efficacy & Capital Efficiency",
         "🔮 2030 Adoption S-Curve Forecasting",
         "🎯 Strategic Stakeholder Playbooks"
-    ]
+    ],
+    label_visibility="collapsed",
 )
 
 st.sidebar.markdown("---")
@@ -100,25 +265,41 @@ st.sidebar.info(
 )
 
 # ---------------------------------------------------------
-# Top Header Banner
+# Hero header
 # ---------------------------------------------------------
-st.markdown('<div class="main-title">⚡ India Electric Vehicle Adoption & Market Intelligence</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-title">End-to-End Business Analytics Platform: Macro Trends, Geographic Archetypes, TCO Parity, Policy Mechanics & 2030 Forecasting</div>', unsafe_allow_html=True)
+st.markdown("""
+<div class="hero">
+    <span class="hero-eyebrow">India · EV Market Intelligence</span>
+    <div class="hero-title">Smart EV Insights,<br>Made Simple</div>
+    <p class="hero-sub">Macro trends, state archetypes, cost-of-ownership parity, policy mechanics and 2030 forecasts, all in one place.</p>
+    <div class="hero-pills">
+        <span class="hero-pill">7 analysis modules</span>
+        <span class="hero-pill ghost">34 states &amp; UTs</span>
+        <span class="hero-pill ghost">Rajya Sabha official data</span>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+
+def kpi_card(icon, label, value, sub, bar=None):
+    bar_html = f'<div class="metric-bar"><span style="width:{bar}%"></span></div>' if bar is not None else ""
+    return (
+        f'<div class="metric-card"><div class="metric-icon">{icon}</div>'
+        f'<div class="metric-lbl">{label}</div><div class="metric-val">{value}</div>'
+        f'<div class="metric-delta">{sub}</div>{bar_html}</div>'
+    )
+
 
 # Top KPI Summary Cards
 kpi1, kpi2, kpi3, kpi4, kpi5 = st.columns(5)
-with kpi1:
-    st.markdown('<div class="metric-card"><div class="metric-lbl">Total Registered EVs</div><div class="metric-val">1.68M+</div><div class="metric-delta">FY24 Annualized (VAHAN)</div></div>', unsafe_allow_html=True)
-with kpi2:
-    st.markdown('<div class="metric-card"><div class="metric-lbl">3W EV Market Share</div><div class="metric-val">52.4%</div><div class="metric-delta">Commercial Lead Segment</div></div>', unsafe_allow_html=True)
-with kpi3:
-    st.markdown('<div class="metric-card"><div class="metric-lbl">Public Chargers (EVPCS)</div><div class="metric-val">12,146</div><div class="metric-delta">MoP Disclosed Count</div></div>', unsafe_allow_html=True)
-with kpi4:
-    st.markdown('<div class="metric-card"><div class="metric-lbl">3W TCO Payback</div><div class="metric-val">3.7 Mos</div><div class="metric-delta">Instant Fuel Arbitrage</div></div>', unsafe_allow_html=True)
-with kpi5:
-    st.markdown('<div class="metric-card"><div class="metric-lbl">Projected 2030 3W Share</div><div class="metric-val">88.2%</div><div class="metric-delta">Beats NITI 80% Target</div></div>', unsafe_allow_html=True)
+kpi1.markdown(kpi_card("🚗", "Total Registered EVs", "1.68M+", "FY24 Annualized (VAHAN)"), unsafe_allow_html=True)
+kpi2.markdown(kpi_card("🛺", "3W EV Market Share", "52.4%", "Commercial Lead Segment", bar=52.4), unsafe_allow_html=True)
+kpi3.markdown(kpi_card("🔌", "Public Chargers (EVPCS)", "12,146", "MoP Disclosed Count"), unsafe_allow_html=True)
+kpi4.markdown(kpi_card("⏱️", "3W TCO Payback", "3.7 Mos", "Instant Fuel Arbitrage"), unsafe_allow_html=True)
+kpi5.markdown(kpi_card("📈", "Projected 2030 3W Share", "88.2%", "Beats NITI 80% Target", bar=88.2), unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
+
 
 # ---------------------------------------------------------
 # 1. EXECUTIVE DASHBOARD & TRENDS
@@ -141,10 +322,10 @@ if menu_choice == "📊 Executive Dashboard & Trends":
             markers=True,
             title="EV Adoption Penetration (%) by Vehicle Category (2018–2023)",
             labels={"year_sort": "Year", "ev_pct": "EV Share of Total Fleet (%)", "vehicle_category": "Category"},
-            color_discrete_sequence=px.colors.qualitative.Dark24
+            color_discrete_sequence=PALETTE
         )
-        fig_cat.update_layout(hovermode="x unified", legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5))
-        col_left.plotly_chart(fig_cat, use_container_width=True)
+        fig_cat.update_layout(hovermode="x unified")
+        show(fig_cat, col_left)
     
     # Global comparison
     df_global = tables.get("global_ev_share", pd.DataFrame()).copy()
@@ -158,10 +339,10 @@ if menu_choice == "📊 Executive Dashboard & Trends":
             barmode="stack",
             title="Global EV Market Composition by Region (2019–2023)",
             labels={"year_sort": "Year", "market_share_pct": "Market Share (%)"},
-            color_discrete_sequence=["#EF4444", "#3B82F6", "#10B981", "#8B5CF6"]
+            color_discrete_sequence=[RED, SKY, GREEN, VIOLET]
         )
         fig_global.update_layout(legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5))
-        col_right.plotly_chart(fig_global, use_container_width=True)
+        show(fig_global, col_right)
         
     st.markdown("### Key Analytical Insights")
     st.markdown("""
@@ -209,7 +390,7 @@ elif menu_choice == "🗺️ State Analytics & Archetypes":
             color_continuous_scale="Viridis"
         )
         fig_bar.update_layout(yaxis=dict(autorange="reversed"))
-        col_chart.plotly_chart(fig_bar, use_container_width=True)
+        show(fig_bar, col_chart)
         
         # Archetype Scatter
         fig_scat = px.scatter(
@@ -227,7 +408,7 @@ elif menu_choice == "🗺️ State Analytics & Archetypes":
                 "archetype": "Market Archetype"
             }
         )
-        col_scat.plotly_chart(fig_scat, use_container_width=True)
+        show(fig_scat, col_scat)
         
         # CIAR Benchmarking Section
         st.subheader("Charging Infrastructure Adequacy Ratio (CIAR) vs. IEA 10:1 Benchmark")
@@ -263,7 +444,7 @@ elif menu_choice == "🗺️ State Analytics & Archetypes":
             xaxis_type="log",
             yaxis=dict(autorange="reversed")
         )
-        st.plotly_chart(fig_ciar, use_container_width=True)
+        show(fig_ciar, st)
 
 # ---------------------------------------------------------
 # 3. STATE BENCHMARKING TOOL
@@ -288,17 +469,17 @@ elif menu_choice == "🥊 State Benchmarking Tool":
         m1, m2, m3, m4, m5, m6 = st.columns(6)
         
         with m1:
-            st.metric("Total EVs", f"{int(row_a['ev_count']):,}", f"{int(row_b['ev_count']):,} ({state_b})")
+            st.metric("Total EVs", f"{int(row_a['ev_count']):,}", f"{state_b}: {int(row_b['ev_count']):,}", delta_color="off")
         with m2:
-            st.metric("EV Penetration %", f"{row_a['ev_penetration_pct']:.2f}%", f"{row_b['ev_penetration_pct']:.2f}%")
+            st.metric("EV Penetration %", f"{row_a['ev_penetration_pct']:.2f}%", f"{state_b}: {row_b['ev_penetration_pct']:.2f}%", delta_color="off")
         with m3:
-            st.metric("Public Chargers", f"{int(row_a['chargers']):,}", f"{int(row_b['chargers']):,}")
+            st.metric("Public Chargers", f"{int(row_a['chargers']):,}", f"{state_b}: {int(row_b['chargers']):,}", delta_color="off")
         with m4:
-            st.metric("CIAR (EVs/Charger)", f"{row_a['ciar']:.1f}", f"{row_b['ciar']:.1f}")
+            st.metric("CIAR (EVs/Charger)", f"{row_a['ciar']:.1f}", f"{state_b}: {row_b['ciar']:.1f}", delta_color="off")
         with m5:
-            st.metric("3W Fleet Share %", f"{row_a['pct_3w']:.1f}%", f"{row_b['pct_3w']:.1f}%")
+            st.metric("3W Fleet Share %", f"{row_a['pct_3w']:.1f}%", f"{state_b}: {row_b['pct_3w']:.1f}%", delta_color="off")
         with m6:
-            st.metric("GSDP per Capita", f"₹{int(row_a['gsdp_pc_inr']):,}", f"₹{int(row_b['gsdp_pc_inr']):,}")
+            st.metric("GSDP per Capita", f"₹{int(row_a['gsdp_pc_inr']):,}", f"{state_b}: ₹{int(row_b['gsdp_pc_inr']):,}", delta_color="off")
             
         st.markdown("---")
         
@@ -316,9 +497,9 @@ elif menu_choice == "🥊 State Benchmarking Tool":
             color="State",
             barmode="group",
             title=f"Head-to-Head Comparison: {state_a} vs. {state_b}",
-            color_discrete_sequence=["#2563EB", "#D97706"]
+            color_discrete_sequence=[GREEN, SKY]
         )
-        st.plotly_chart(fig_comp, use_container_width=True)
+        show(fig_comp, st)
         
         st.info(
             f"**Strategic Takeaway:** **{state_a}** operates as **{row_a.get('archetype', 'Cluster ' + str(row_a.get('cluster_id')))}** "
@@ -424,7 +605,7 @@ elif menu_choice == "💰 Interactive TCO Simulator":
             yaxis_title="Total Expenditure (₹)",
             hovermode="x unified"
         )
-        st.plotly_chart(fig_cross, use_container_width=True)
+        show(fig_cross, st)
 
 # ---------------------------------------------------------
 # 5. SUBSIDY EFFICACY & POLICY FRICTION
@@ -444,13 +625,13 @@ elif menu_choice == "🏛️ Subsidy Efficacy & Capital Efficiency":
             x=df_policy["financial_year"],
             y=df_policy["budget_allocation_cr"],
             name="Budget Allocation (₹ Cr)",
-            marker_color="#64748B"
+            marker_color="#94A3B8"
         ))
         fig_bud.add_trace(go.Bar(
             x=df_policy["financial_year"],
             y=df_policy["fund_utilization_cr"],
             name="Fund Utilization (₹ Cr)",
-            marker_color="#0D9488"
+            marker_color=GREEN
         ))
         fig_bud.add_trace(go.Scatter(
             x=df_policy["financial_year"],
@@ -461,14 +642,8 @@ elif menu_choice == "🏛️ Subsidy Efficacy & Capital Efficiency":
             mode="lines+markers"
         ))
         
-        fig_bud.update_layout(
-            title="Budget Allocation vs. Utilization & The 2023-24 Drop",
-            yaxis=dict(title="Amount (₹ Crore)"),
-            yaxis2=dict(title="Utilization Rate (%)", overlaying="y", side="right", range=[0, 115]),
-            barmode="group",
-            legend=dict(orientation="h", yanchor="bottom", y=-0.3, xanchor="center", x=0.5)
-        )
-        col_bud.plotly_chart(fig_bud, use_container_width=True)
+        fig_bud.update_layout(title="Budget Allocation vs. Utilization & The 2023-24 Drop", yaxis=dict(title="Amount (₹ Crore)"), yaxis2=dict(title="Utilization Rate (%)", overlaying="y", side="right", range=[0, 115]), barmode="group")
+        show(fig_bud, col_bud)
         
         # Capital intensity
         if not df_targets.empty and not df_subsidy.empty:
@@ -490,7 +665,7 @@ elif menu_choice == "🏛️ Subsidy Efficacy & Capital Efficiency":
                 color_continuous_scale="Tealgrn"
             )
             fig_eff.update_layout(yaxis_type="log")
-            col_eff.plotly_chart(fig_eff, use_container_width=True)
+            show(fig_eff, col_eff)
             
         st.markdown("### Structural Drivers of the 2023–24 Subsidy Utilization Drop")
         st.markdown("""
@@ -528,7 +703,7 @@ elif menu_choice == "🔮 2030 Adoption S-Curve Forecasting":
             yaxis=dict(range=[0, 100]),
             hovermode="x unified"
         )
-        st.plotly_chart(fig_proj, use_container_width=True)
+        show(fig_proj, st)
         
         c1, c2, c3 = st.columns(3)
         with c1:
