@@ -104,14 +104,30 @@ Tailored strategic playbooks for:
 
 The repository includes a production-grade, interactive web application built with **Streamlit** and **Plotly**.
 
-### How to Run Locally:
-```bash
-# Ensure dependencies are installed
-pip install streamlit plotly pandas numpy scipy scikit-learn
+## 🚀 Live Dashboard
 
-# Launch the Streamlit dashboard
+**Explore the interactive dashboard here:**
+
+👉Automobile Sales & EV Adoption Dashboard: https://automobile-sales-and-ev-adoption-trends.onrender.com/
+
+The dashboard is publicly accessible. No installation or setup is required.
+
+### Run Locally (Optional)
+
+If you want to run the project on your own machine:
+
+```bash
+git clone https://github.com/RitikaSen27/Automobile-sales-and-EV-adoption-trends.git
+
+cd Automobile-sales-and-EV-adoption-trends
+
+pip install -r requirements.txt
+
 streamlit run app.py
 ```
+
+The application will be available at `http://localhost:8501`.
+
 
 ### Dashboard Modules:
 1. **📊 Executive Dashboard & Trends:** Real-time KPI summaries, YoY registration acceleration curves, category adoption dynamics, and global market comparisons.
